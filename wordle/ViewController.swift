@@ -96,8 +96,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField5.backgroundColor = .green
             }
             
-           win()
-            
+           
+            win()
             
             
             
@@ -347,7 +347,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if (textField.text?.count ?? 0) - range.length + string.count > 1 {
-            textField.isEnabled = false
+            
             textField.autocorrectionType = .no
             return false
         }
