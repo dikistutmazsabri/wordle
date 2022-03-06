@@ -96,7 +96,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField5.backgroundColor = .green
             }
             
-           
+            
             win()
             
             
@@ -140,7 +140,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             textField13.isEnabled = true
             textField14.isEnabled = true
             textField15.isEnabled = true
-     
+            
             
         }else if textField1.text?.count != 0 && textField2.text?.count != 0 && textField3.text?.count != 0 && textField4.text?.count != 0 && textField5.text?.count != 0 && textField6.text?.count != 0 && textField7.text?.count != 0 && textField8.text?.count != 0 && textField9.text?.count != 0 && textField10.text?.count != 0 && textField11.text?.count != 0 && textField12.text?.count != 0 && textField13.text?.count != 0 && textField14.text?.count != 0 && textField15.text?.count != 0 && textField16.text?.count == 0 && textField17.text?.count == 0 && textField18.text?.count == 0 && textField19.text?.count == 0 && textField20.text?.count == 0 && textField21.text?.count == 0 && textField22.text?.count == 0 && textField23.text?.count == 0 && textField24.text?.count == 0 && textField25.text?.count == 0 {
             
@@ -228,11 +228,39 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
     }
     
-  
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textField1.tag = 0
+        self.textField2.tag = 1
+        self.textField3.tag = 2
+        self.textField4.tag = 3
+        self.textField5.tag = 4
+        self.textField6.tag = 5
+        self.textField7.tag = 6
+        self.textField8.tag = 7
+        self.textField9.tag = 8
+        self.textField10.tag = 9
+        self.textField11.tag = 10
+        self.textField12.tag = 11
+        self.textField13.tag = 12
+        self.textField14.tag = 13
+        self.textField15.tag = 14
+        self.textField16.tag = 15
+        self.textField17.tag = 16
+        self.textField18.tag = 17
+        self.textField19.tag = 18
+        self.textField20.tag = 19
+        self.textField21.tag = 20
+        self.textField22.tag = 21
+        self.textField23.tag = 22
+        self.textField24.tag = 23
+        self.textField25.tag = 24
+        
+        
         textField1.delegate = self
         textField2.delegate = self
         textField3.delegate = self
@@ -291,8 +319,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
     
     func randomWord () {
-    let random = Int(arc4random_uniform(UInt32(wordle.count - 1)))
-    word = wordle[random]
+        let random = Int(arc4random_uniform(UInt32(wordle.count - 1)))
+        word = wordle[random]
     }
     
     @objc func countDown() {
@@ -327,7 +355,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
                 self.randomWord()
+                
                 self.counter = 0
+                
+                self.textField1.backgroundColor = .white
+                self.textField2.backgroundColor = .white
+                self.textField3.backgroundColor = .white
+                self.textField4.backgroundColor = .white
+                self.textField5.backgroundColor = .white
+                
                 self.textField1.text = ""
                 self.textField2.text = ""
                 self.textField3.text = ""
@@ -339,15 +375,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
             self.present(alertController, animated: true, completion: nil)
         }
     }
-   
+    
     
     
     
     private let allowedCharacters = CharacterSet(charactersIn: "ABCDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ")
-
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if (textField.text?.count ?? 0) - range.length + string.count > 1 {
-            
+            self.tagBasedTextField(textField)
             textField.autocorrectionType = .no
             return false
         }
@@ -355,5 +391,14 @@ class ViewController: UIViewController, UITextFieldDelegate{
         return allowedCharacters.isSuperset(of: CharacterSet(charactersIn: string))
     }
     
+    private func tagBasedTextField(_ textField: UITextField) {
+        let nextTextFieldTag = textField.tag + 1
+        
+        if let nextTextField = textField.superview?.viewWithTag(nextTextFieldTag) as? UITextField {
+            nextTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+    }
     
 }
