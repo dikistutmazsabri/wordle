@@ -80,20 +80,30 @@ class ViewController: UIViewController, UITextFieldDelegate{
         if textField1.text?.count != 0 && textField2.text?.count != 0 && textField3.text?.count != 0 && textField4.text?.count != 0 && textField5.text?.count != 0 && textField6.text?.count == 0 && textField7.text?.count == 0 && textField8.text?.count == 0 && textField9.text?.count == 0 && textField10.text?.count == 0 && textField11.text?.count == 0 && textField12.text?.count == 0 && textField13.text?.count == 0 && textField14.text?.count == 0 && textField15.text?.count == 0 && textField16.text?.count == 0 && textField17.text?.count == 0 && textField18.text?.count == 0 && textField19.text?.count == 0 && textField20.text?.count == 0 && textField21.text?.count == 0 && textField22.text?.count == 0 && textField23.text?.count == 0 && textField24.text?.count == 0 && textField24.text?.count == 0 {
             
             
-            if textField1.text == randomOne[0]  {
+            if textField1.text == randomOne[0] {
                 textField1.backgroundColor = .green
+            }else if randomOne.contains(textField1.text!) {
+                textField1.backgroundColor = .yellow
             }
             if textField2.text == randomOne[1] {
                 textField2.backgroundColor = .green
+            }else if randomOne.contains(textField2.text!) {
+                textField2.backgroundColor = .yellow
             }
             if textField3.text == randomOne[2]  {
                 textField3.backgroundColor = .green
+            }else if randomOne.contains(textField3.text!) {
+                textField3.backgroundColor = .yellow
             }
             if textField4.text == randomOne[3] {
                 textField4.backgroundColor = .green
+            }else if randomOne.contains(textField4.text!) {
+                textField4.backgroundColor = .yellow
             }
             if textField5.text == randomOne[4] {
                 textField5.backgroundColor = .green
+            }else if randomOne.contains(textField5.text!) {
+                textField5.backgroundColor = .yellow
             }
             
             
@@ -116,19 +126,32 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField6.text == randomOne[0] {
                 textField6.backgroundColor = .green
+            }else if randomOne.contains(textField6.text!) {
+                textField6.backgroundColor = .yellow
             }
+            
             if textField7.text == randomOne[1] {
                 textField7.backgroundColor = .green
+            }else if randomOne.contains(textField7.text!) {
+                textField7.backgroundColor = .yellow
             }
             if textField8.text == randomOne[2] {
                 textField8.backgroundColor = .green
+            }else if randomOne.contains(textField8.text!) {
+                textField8.backgroundColor = .yellow
             }
             if textField9.text == randomOne[3] {
                 textField9.backgroundColor = .green
+            }else if randomOne.contains(textField9.text!) {
+                textField9.backgroundColor = .yellow
             }
             if textField10.text == randomOne[4] {
                 textField10.backgroundColor = .green
+            }else if randomOne.contains(textField10.text!) {
+                textField10.backgroundColor = .yellow
             }
+            
+            win2()
             
             textField6.isEnabled = false
             textField7.isEnabled = false
@@ -146,19 +169,31 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField11.text == randomOne[0] {
                 textField11.backgroundColor = .green
+            }else if randomOne.contains(textField11.text!) {
+                textField11.backgroundColor = .yellow
             }
             if textField12.text == randomOne[1] {
                 textField12.backgroundColor = .green
+            }else if randomOne.contains(textField12.text!) {
+                textField12.backgroundColor = .yellow
             }
             if textField13.text == randomOne[2] {
                 textField13.backgroundColor = .green
+            }else if randomOne.contains(textField13.text!) {
+                textField13.backgroundColor = .yellow
             }
             if textField14.text == randomOne[3] {
                 textField14.backgroundColor = .green
+            }else if randomOne.contains(textField14.text!) {
+                textField14.backgroundColor = .yellow
             }
             if textField15.text == randomOne[4] {
                 textField15.backgroundColor = .green
+            }else if randomOne.contains(textField15.text!) {
+                textField15.backgroundColor = .yellow
             }
+            
+            win3()
             
             textField11.isEnabled = false
             textField12.isEnabled = false
@@ -175,19 +210,31 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField16.text == randomOne[0] {
                 textField16.backgroundColor = .green
+            }else if randomOne.contains(textField16.text!) {
+                textField16.backgroundColor = .yellow
             }
             if textField17.text == randomOne[1] {
                 textField17.backgroundColor = .green
+            }else if randomOne.contains(textField17.text!) {
+                textField17.backgroundColor = .yellow
             }
             if textField18.text == randomOne[2] {
                 textField18.backgroundColor = .green
+            }else if randomOne.contains(textField18.text!) {
+                textField18.backgroundColor = .yellow
             }
             if textField19.text == randomOne[3] {
                 textField19.backgroundColor = .green
+            }else if randomOne.contains(textField19.text!) {
+                textField19.backgroundColor = .yellow
             }
             if textField20.text == randomOne[4] {
                 textField20.backgroundColor = .green
+            }else if randomOne.contains(textField20.text!) {
+                textField20.backgroundColor = .yellow
             }
+            
+            win4()
             
             textField16.isEnabled = false
             textField17.isEnabled = false
@@ -204,19 +251,31 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField21.text == randomOne[0] {
                 textField21.backgroundColor = .green
+            }else if randomOne.contains(textField21.text!) {
+                textField21.backgroundColor = .yellow
             }
             if textField22.text == randomOne[1] {
                 textField22.backgroundColor = .green
+            }else if randomOne.contains(textField22.text!) {
+                textField22.backgroundColor = .yellow
             }
             if textField23.text == randomOne[2] {
                 textField23.backgroundColor = .green
+            }else if randomOne.contains(textField23.text!) {
+                textField23.backgroundColor = .yellow
             }
             if textField24.text == randomOne[3] {
                 textField24.backgroundColor = .green
+            }else if randomOne.contains(textField24.text!) {
+                textField24.backgroundColor = .yellow
             }
             if textField25.text == randomOne[4] {
                 textField25.backgroundColor = .green
+            }else if randomOne.contains(textField25.text!) {
+                textField25.backgroundColor = .yellow
             }
+            
+            win5()
             
             textField21.isEnabled = false
             textField22.isEnabled = false
@@ -316,8 +375,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
         textField24.isEnabled = false
         textField25.isEnabled = false
         print(word.map{ String($0) })
+        let viewTapGesture = UITapGestureRecognizer(target: self, action: #selector(endedit))
+        view.addGestureRecognizer(viewTapGesture)
     }
-    
+    @objc func endedit () {
+        view.endEditing(true)
+    }
     func randomWord () {
         let random = Int(arc4random_uniform(UInt32(wordle.count - 1)))
         word = wordle[random]
@@ -376,13 +439,119 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    func win2 () {
+        if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
+            
+            let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                self.randomWord()
+                
+                self.counter = 0
+                
+                self.textField6.backgroundColor = .white
+                self.textField7.backgroundColor = .white
+                self.textField8.backgroundColor = .white
+                self.textField9.backgroundColor = .white
+                self.textField10.backgroundColor = .white
+                
+                self.textField6.text = ""
+                self.textField7.text = ""
+                self.textField8.text = ""
+                self.textField9.text = ""
+                self.textField10.text = ""
+                
+            }
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
     
+    func win3() {
+        if textField11.backgroundColor == .green && textField12.backgroundColor == .green && textField13.backgroundColor == .green && textField14.backgroundColor == .green && textField15.backgroundColor == .green {
+            
+            let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                self.randomWord()
+                
+                self.counter = 0
+                
+                self.textField11.backgroundColor = .white
+                self.textField12.backgroundColor = .white
+                self.textField13.backgroundColor = .white
+                self.textField14.backgroundColor = .white
+                self.textField5.backgroundColor = .white
+                
+                self.textField11.text = ""
+                self.textField12.text = ""
+                self.textField13.text = ""
+                self.textField14.text = ""
+                self.textField15.text = ""
+                
+            }
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
     
+    func win4() {
+        if textField16.backgroundColor == .green && textField17.backgroundColor == .green && textField18.backgroundColor == .green && textField19.backgroundColor == .green && textField20.backgroundColor == .green {
+            
+            let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                self.randomWord()
+                
+                self.counter = 0
+                
+                self.textField16.backgroundColor = .white
+                self.textField17.backgroundColor = .white
+                self.textField18.backgroundColor = .white
+                self.textField19.backgroundColor = .white
+                self.textField20.backgroundColor = .white
+                
+                self.textField16.text = ""
+                self.textField17.text = ""
+                self.textField18.text = ""
+                self.textField19.text = ""
+                self.textField20.text = ""
+                
+            }
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    func win5() {
+        if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
+            
+            let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                self.randomWord()
+                
+                self.counter = 0
+                
+                self.textField21.backgroundColor = .white
+                self.textField22.backgroundColor = .white
+                self.textField23.backgroundColor = .white
+                self.textField24.backgroundColor = .white
+                self.textField25.backgroundColor = .white
+                
+                self.textField21.text = ""
+                self.textField22.text = ""
+                self.textField23.text = ""
+                self.textField24.text = ""
+                self.textField25.text = ""
+                
+            }
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
     
     private let allowedCharacters = CharacterSet(charactersIn: "ABCDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ")
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if (textField.text?.count ?? 0) - range.length + string.count > 1 {
+            
             self.tagBasedTextField(textField)
             textField.autocorrectionType = .no
             return false
