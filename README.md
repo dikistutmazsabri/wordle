@@ -1,2 +1,3 @@
 # gitWordleBeta
 # gitWordleBeta
+# wordle
