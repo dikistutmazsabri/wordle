@@ -69,43 +69,53 @@ class ViewController: UIViewController, UITextFieldDelegate{
     var score = ""
     var time = (Timer)()
     var counter = 0
-    
+    var randomAgain = [String] ()
     
     @IBAction func CHECK(_ sender: Any) {
         
-        let randomOne = word.map{ String($0) }
+        var randomOne = word.map{ String($0) }
         
-        
+        randomAgain = randomOne
         
         if textField1.text?.count != 0 && textField2.text?.count != 0 && textField3.text?.count != 0 && textField4.text?.count != 0 && textField5.text?.count != 0 && textField6.text?.count == 0 && textField7.text?.count == 0 && textField8.text?.count == 0 && textField9.text?.count == 0 && textField10.text?.count == 0 && textField11.text?.count == 0 && textField12.text?.count == 0 && textField13.text?.count == 0 && textField14.text?.count == 0 && textField15.text?.count == 0 && textField16.text?.count == 0 && textField17.text?.count == 0 && textField18.text?.count == 0 && textField19.text?.count == 0 && textField20.text?.count == 0 && textField21.text?.count == 0 && textField22.text?.count == 0 && textField23.text?.count == 0 && textField24.text?.count == 0 && textField24.text?.count == 0 {
             
             
             if textField1.text == randomOne[0] {
                 textField1.backgroundColor = .green
-            }else if randomOne.contains(textField1.text!) && textField1.backgroundColor != .green && textField2.backgroundColor != .green && textField3.backgroundColor != .green && textField4.backgroundColor != .green && textField5.backgroundColor != .green{
+                randomOne[0] = ""
+            }else if randomOne.contains(textField1.text!) {
                 textField1.backgroundColor = .yellow
             }
             if textField2.text == randomOne[1] {
                 textField2.backgroundColor = .green
-            }else if randomOne.contains(textField2.text!) && textField1.backgroundColor != .green && textField2.backgroundColor != .green && textField3.backgroundColor != .green && textField4.backgroundColor != .green && textField5.backgroundColor != .green {
+                randomOne[1] = ""
+            }else if randomOne.contains(textField2.text!) {
                 textField2.backgroundColor = .yellow
             }
             if textField3.text == randomOne[2]  {
                 textField3.backgroundColor = .green
-            }else if randomOne.contains(textField3.text!) && textField1.backgroundColor != .green && textField2.backgroundColor != .green && textField3.backgroundColor != .green && textField4.backgroundColor != .green && textField5.backgroundColor != .green {
+                randomOne[2] = ""
+            }else if randomOne.contains(textField3.text!) {
                 textField3.backgroundColor = .yellow
             }
             if textField4.text == randomOne[3] {
                 textField4.backgroundColor = .green
-            }else if randomOne.contains(textField4.text!) && textField1.backgroundColor != .green && textField2.backgroundColor != .green && textField3.backgroundColor != .green && textField4.backgroundColor != .green && textField5.backgroundColor != .green {
+                randomOne[3] = ""
+            }else if randomOne.contains(textField4.text!) {
                 textField4.backgroundColor = .yellow
             }
             if textField5.text == randomOne[4] {
                 textField5.backgroundColor = .green
-            }else if randomOne.contains(textField5.text!) && textField1.backgroundColor != .green && textField2.backgroundColor != .green && textField3.backgroundColor != .green && textField4.backgroundColor != .green && textField5.backgroundColor != .green {
+                randomOne[4] = ""
+            }else if randomOne.contains(textField5.text!) {
                 textField5.backgroundColor = .yellow
             }
             
+            randomOne[0]=randomAgain[0]
+            randomOne[1]=randomAgain[1]
+            randomOne[2]=randomAgain[2]
+            randomOne[3]=randomAgain[3]
+            randomOne[4]=randomAgain[4]
             
             win()
             
@@ -126,30 +136,41 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField6.text == randomOne[0]{
                 textField6.backgroundColor = .green
-            }else if randomOne.contains(textField6.text!) && textField6.backgroundColor != .green && textField7.backgroundColor != .green && textField8.backgroundColor != .green && textField9.backgroundColor != .green && textField10.backgroundColor != .green {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField6.text!) {
                 textField6.backgroundColor = .yellow
             }
             
             if textField7.text == randomOne[1] {
                 textField7.backgroundColor = .green
-            }else if randomOne.contains(textField7.text!) && textField6.backgroundColor != .green && textField7.backgroundColor != .green && textField8.backgroundColor != .green && textField9.backgroundColor != .green && textField10.backgroundColor != .green {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField7.text!) {
                 textField7.backgroundColor = .yellow
             }
             if textField8.text == randomOne[2] {
                 textField8.backgroundColor = .green
-            }else if randomOne.contains(textField8.text!) && textField6.backgroundColor != .green && textField7.backgroundColor != .green && textField8.backgroundColor != .green && textField9.backgroundColor != .green && textField10.backgroundColor != .green {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField8.text!) {
                 textField8.backgroundColor = .yellow
             }
             if textField9.text == randomOne[3] {
                 textField9.backgroundColor = .green
-            }else if randomOne.contains(textField9.text!) && textField6.backgroundColor != .green && textField7.backgroundColor != .green && textField8.backgroundColor != .green && textField9.backgroundColor != .green && textField10.backgroundColor != .green {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField9.text!) {
                 textField9.backgroundColor = .yellow
             }
             if textField10.text == randomOne[4] {
                 textField10.backgroundColor = .green
-            }else if randomOne.contains(textField10.text!) && textField6.backgroundColor != .green && textField7.backgroundColor != .green && textField8.backgroundColor != .green && textField9.backgroundColor != .green && textField10.backgroundColor != .green {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField10.text!) {
                 textField10.backgroundColor = .yellow
             }
+            
+            randomOne[0]=randomAgain[0]
+            randomOne[1]=randomAgain[1]
+            randomOne[2]=randomAgain[2]
+            randomOne[3]=randomAgain[3]
+            randomOne[4]=randomAgain[4]
             
             win2()
             
@@ -169,29 +190,40 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField11.text == randomOne[0] {
                 textField11.backgroundColor = .green
-            }else if randomOne.contains(textField11.text!) && textField11.backgroundColor != .green && textField12.backgroundColor != .green && textField13.backgroundColor != .green && textField14.backgroundColor != .green && textField15.backgroundColor != .green {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField11.text!) {
                 textField11.backgroundColor = .yellow
             }
             if textField12.text == randomOne[1] {
                 textField12.backgroundColor = .green
-            }else if randomOne.contains(textField12.text!) && textField11.backgroundColor != .green && textField12.backgroundColor != .green && textField13.backgroundColor != .green && textField14.backgroundColor != .green && textField15.backgroundColor != .green  {
+                randomOne[1] = ""
+            }else if randomOne.contains(textField12.text!){
                 textField12.backgroundColor = .yellow
             }
             if textField13.text == randomOne[2] {
                 textField13.backgroundColor = .green
-            }else if randomOne.contains(textField13.text!) && textField11.backgroundColor != .green && textField12.backgroundColor != .green && textField13.backgroundColor != .green && textField14.backgroundColor != .green && textField15.backgroundColor != .green  {
+                randomOne[2] = ""
+            }else if randomOne.contains(textField13.text!) {
                 textField13.backgroundColor = .yellow
             }
             if textField14.text == randomOne[3] {
                 textField14.backgroundColor = .green
-            }else if randomOne.contains(textField14.text!) && textField11.backgroundColor != .green && textField12.backgroundColor != .green && textField13.backgroundColor != .green && textField14.backgroundColor != .green && textField15.backgroundColor != .green  {
+                randomOne[3] = ""
+            }else if randomOne.contains(textField14.text!){
                 textField14.backgroundColor = .yellow
             }
             if textField15.text == randomOne[4] {
                 textField15.backgroundColor = .green
-            }else if randomOne.contains(textField15.text!) && textField11.backgroundColor != .green && textField12.backgroundColor != .green && textField13.backgroundColor != .green && textField14.backgroundColor != .green && textField15.backgroundColor != .green  {
+                randomOne[4] = ""
+            }else if randomOne.contains(textField15.text!) {
                 textField15.backgroundColor = .yellow
             }
+            
+            randomOne[0]=randomAgain[0]
+            randomOne[1]=randomAgain[1]
+            randomOne[2]=randomAgain[2]
+            randomOne[3]=randomAgain[3]
+            randomOne[4]=randomAgain[4]
             
             win3()
             
@@ -210,29 +242,40 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField16.text == randomOne[0] {
                 textField16.backgroundColor = .green
-            }else if randomOne.contains(textField16.text!) && textField16.backgroundColor != .green && textField17.backgroundColor != .green && textField13.backgroundColor != .green && textField18.backgroundColor != .green && textField19.backgroundColor != .green  {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField16.text!) {
                 textField16.backgroundColor = .yellow
             }
             if textField17.text == randomOne[1] {
                 textField17.backgroundColor = .green
-            }else if randomOne.contains(textField17.text!) && textField16.backgroundColor != .green && textField17.backgroundColor != .green && textField13.backgroundColor != .green && textField18.backgroundColor != .green && textField19.backgroundColor != .green  {
+                randomOne[1] = ""
+            }else if randomOne.contains(textField17.text!) {
                 textField17.backgroundColor = .yellow
             }
             if textField18.text == randomOne[2] {
                 textField18.backgroundColor = .green
-            }else if randomOne.contains(textField18.text!) && textField16.backgroundColor != .green && textField17.backgroundColor != .green && textField13.backgroundColor != .green && textField18.backgroundColor != .green && textField19.backgroundColor != .green  {
+                randomOne[2] = ""
+            }else if randomOne.contains(textField18.text!) {
                 textField18.backgroundColor = .yellow
             }
             if textField19.text == randomOne[3] {
                 textField19.backgroundColor = .green
-            }else if randomOne.contains(textField19.text!) && && textField16.backgroundColor != .green && textField17.backgroundColor != .green && textField13.backgroundColor != .green && textField18.backgroundColor != .green && textField19.backgroundColor != .green  {
+                randomOne[3] = ""
+            }else if randomOne.contains(textField19.text!) {
                 textField19.backgroundColor = .yellow
             }
             if textField20.text == randomOne[4] {
                 textField20.backgroundColor = .green
-            }else if randomOne.contains(textField20.text!) && && textField16.backgroundColor != .green && textField17.backgroundColor != .green && textField13.backgroundColor != .green && textField18.backgroundColor != .green && textField19.backgroundColor != .green  {
+                randomOne[4] = ""
+            }else if randomOne.contains(textField20.text!) {
                 textField20.backgroundColor = .yellow
             }
+            
+            randomOne[0]=randomAgain[0]
+            randomOne[1]=randomAgain[1]
+            randomOne[2]=randomAgain[2]
+            randomOne[3]=randomAgain[3]
+            randomOne[4]=randomAgain[4]
             
             win4()
             
@@ -251,29 +294,40 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField21.text == randomOne[0] {
                 textField21.backgroundColor = .green
-            }else if randomOne.contains(textField21.text!) && textField21.backgroundColor != .green && textField22.backgroundColor != .green && textField23.backgroundColor != .green && textField24.backgroundColor != .green && textField25.backgroundColor != .green   {
+                randomOne[0] = ""
+            }else if randomOne.contains(textField21.text!) {
                 textField21.backgroundColor = .yellow
             }
             if textField22.text == randomOne[1] {
                 textField22.backgroundColor = .green
-            }else if randomOne.contains(textField22.text!) && textField21.backgroundColor != .green && textField22.backgroundColor != .green && textField23.backgroundColor != .green && textField24.backgroundColor != .green && textField25.backgroundColor != .green {
+                randomOne[1] = ""
+            }else if randomOne.contains(textField22.text!) {
                 textField22.backgroundColor = .yellow
             }
             if textField23.text == randomOne[2] {
                 textField23.backgroundColor = .green
-            }else if randomOne.contains(textField23.text!) && textField21.backgroundColor != .green && textField22.backgroundColor != .green && textField23.backgroundColor != .green && textField24.backgroundColor != .green && textField25.backgroundColor != .green {
+                randomOne[2] = ""
+            }else if randomOne.contains(textField23.text!) {
                 textField23.backgroundColor = .yellow
             }
             if textField24.text == randomOne[3] {
                 textField24.backgroundColor = .green
-            }else if randomOne.contains(textField24.text!) && textField21.backgroundColor != .green && textField22.backgroundColor != .green && textField23.backgroundColor != .green && textField24.backgroundColor != .green && textField25.backgroundColor != .green {
+                randomOne[3] = ""
+            }else if randomOne.contains(textField24.text!) {
                 textField24.backgroundColor = .yellow
             }
             if textField25.text == randomOne[4] {
                 textField25.backgroundColor = .green
-            }else if randomOne.contains(textField25.text!) && textField21.backgroundColor != .green && textField22.backgroundColor != .green && textField23.backgroundColor != .green && textField24.backgroundColor != .green && textField25.backgroundColor != .green {
+                randomOne[4] = ""
+            }else if randomOne.contains(textField25.text!) {
                 textField25.backgroundColor = .yellow
             }
+            
+            randomOne[0]=randomAgain[0]
+            randomOne[1]=randomAgain[1]
+            randomOne[2]=randomAgain[2]
+            randomOne[3]=randomAgain[3]
+            randomOne[4]=randomAgain[4]
             
             win5()
             
@@ -354,6 +408,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         randomWord()
         
+        
         textField6.isEnabled = false
         textField7.isEnabled = false
         textField8.isEnabled = false
@@ -374,6 +429,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         textField23.isEnabled = false
         textField24.isEnabled = false
         textField25.isEnabled = false
+        
         print(word.map{ String($0) })
         let viewTapGesture = UITapGestureRecognizer(target: self, action: #selector(endedit))
         view.addGestureRecognizer(viewTapGesture)
@@ -409,7 +465,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
         wordle.removeAll(keepingCapacity: false)
         wordle.append("KİTAP")
         wordle.append("KALEM")
-        wordle.append("DEFTER")
+        wordle.append("DURUM")
+        wordle.append("MERVE")
     }
     
     func win () {
@@ -420,6 +477,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 self.randomWord()
                 
                 self.counter = 0
+                
+                self.resetTextfields()
                 
                 self.textField1.backgroundColor = .white
                 self.textField2.backgroundColor = .white
@@ -448,12 +507,24 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 
                 self.counter = 0
                 
+                self.resetTextfields()
+                
+                self.textField1.backgroundColor = .white
+                self.textField2.backgroundColor = .white
+                self.textField3.backgroundColor = .white
+                self.textField4.backgroundColor = .white
+                self.textField5.backgroundColor = .white
                 self.textField6.backgroundColor = .white
                 self.textField7.backgroundColor = .white
                 self.textField8.backgroundColor = .white
                 self.textField9.backgroundColor = .white
                 self.textField10.backgroundColor = .white
                 
+                self.textField1.text = ""
+                self.textField2.text = ""
+                self.textField3.text = ""
+                self.textField4.text = ""
+                self.textField5.text = ""
                 self.textField6.text = ""
                 self.textField7.text = ""
                 self.textField8.text = ""
@@ -475,18 +546,40 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 
                 self.counter = 0
                 
+                self.resetTextfields()
+                
+                self.textField1.backgroundColor = .white
+                self.textField2.backgroundColor = .white
+                self.textField3.backgroundColor = .white
+                self.textField4.backgroundColor = .white
+                self.textField5.backgroundColor = .white
+                self.textField6.backgroundColor = .white
+                self.textField7.backgroundColor = .white
+                self.textField8.backgroundColor = .white
+                self.textField9.backgroundColor = .white
+                self.textField10.backgroundColor = .white
                 self.textField11.backgroundColor = .white
                 self.textField12.backgroundColor = .white
                 self.textField13.backgroundColor = .white
                 self.textField14.backgroundColor = .white
-                self.textField5.backgroundColor = .white
+                self.textField15.backgroundColor = .white
                 
+                self.textField1.text = ""
+                self.textField2.text = ""
+                self.textField3.text = ""
+                self.textField4.text = ""
+                self.textField5.text = ""
+                self.textField6.text = ""
+                self.textField7.text = ""
+                self.textField8.text = ""
+                self.textField9.text = ""
+                self.textField10.text = ""
                 self.textField11.text = ""
                 self.textField12.text = ""
                 self.textField13.text = ""
                 self.textField14.text = ""
                 self.textField15.text = ""
-                
+               
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
@@ -502,12 +595,44 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 
                 self.counter = 0
                 
+                self.resetTextfields()
+                
+                self.textField1.backgroundColor = .white
+                self.textField2.backgroundColor = .white
+                self.textField3.backgroundColor = .white
+                self.textField4.backgroundColor = .white
+                self.textField5.backgroundColor = .white
+                self.textField6.backgroundColor = .white
+                self.textField7.backgroundColor = .white
+                self.textField8.backgroundColor = .white
+                self.textField9.backgroundColor = .white
+                self.textField10.backgroundColor = .white
+                self.textField11.backgroundColor = .white
+                self.textField12.backgroundColor = .white
+                self.textField13.backgroundColor = .white
+                self.textField14.backgroundColor = .white
+                self.textField15.backgroundColor = .white
                 self.textField16.backgroundColor = .white
                 self.textField17.backgroundColor = .white
                 self.textField18.backgroundColor = .white
                 self.textField19.backgroundColor = .white
                 self.textField20.backgroundColor = .white
                 
+                self.textField1.text = ""
+                self.textField2.text = ""
+                self.textField3.text = ""
+                self.textField4.text = ""
+                self.textField5.text = ""
+                self.textField6.text = ""
+                self.textField7.text = ""
+                self.textField8.text = ""
+                self.textField9.text = ""
+                self.textField10.text = ""
+                self.textField11.text = ""
+                self.textField12.text = ""
+                self.textField13.text = ""
+                self.textField14.text = ""
+                self.textField15.text = ""
                 self.textField16.text = ""
                 self.textField17.text = ""
                 self.textField18.text = ""
@@ -529,12 +654,54 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 
                 self.counter = 0
                 
+                self.resetTextfields()
+                
+                self.textField1.backgroundColor = .white
+                self.textField2.backgroundColor = .white
+                self.textField3.backgroundColor = .white
+                self.textField4.backgroundColor = .white
+                self.textField5.backgroundColor = .white
+                self.textField6.backgroundColor = .white
+                self.textField7.backgroundColor = .white
+                self.textField8.backgroundColor = .white
+                self.textField9.backgroundColor = .white
+                self.textField10.backgroundColor = .white
+                self.textField11.backgroundColor = .white
+                self.textField12.backgroundColor = .white
+                self.textField13.backgroundColor = .white
+                self.textField14.backgroundColor = .white
+                self.textField15.backgroundColor = .white
+                self.textField16.backgroundColor = .white
+                self.textField17.backgroundColor = .white
+                self.textField18.backgroundColor = .white
+                self.textField19.backgroundColor = .white
+                self.textField20.backgroundColor = .white
                 self.textField21.backgroundColor = .white
                 self.textField22.backgroundColor = .white
                 self.textField23.backgroundColor = .white
                 self.textField24.backgroundColor = .white
                 self.textField25.backgroundColor = .white
                 
+                self.textField1.text = ""
+                self.textField2.text = ""
+                self.textField3.text = ""
+                self.textField4.text = ""
+                self.textField5.text = ""
+                self.textField6.text = ""
+                self.textField7.text = ""
+                self.textField8.text = ""
+                self.textField9.text = ""
+                self.textField10.text = ""
+                self.textField11.text = ""
+                self.textField12.text = ""
+                self.textField13.text = ""
+                self.textField14.text = ""
+                self.textField15.text = ""
+                self.textField16.text = ""
+                self.textField17.text = ""
+                self.textField18.text = ""
+                self.textField19.text = ""
+                self.textField20.text = ""
                 self.textField21.text = ""
                 self.textField22.text = ""
                 self.textField23.text = ""
@@ -570,4 +737,34 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    func resetTextfields () {
+        
+        randomWord()
+        
+        textField1.isEnabled = true
+        textField2.isEnabled = true
+        textField3.isEnabled = true
+        textField4.isEnabled = true
+        textField5.isEnabled = true
+        textField6.isEnabled = false
+        textField7.isEnabled = false
+        textField8.isEnabled = false
+        textField9.isEnabled = false
+        textField10.isEnabled = false
+        textField11.isEnabled = false
+        textField12.isEnabled = false
+        textField13.isEnabled = false
+        textField14.isEnabled = false
+        textField15.isEnabled = false
+        textField16.isEnabled = false
+        textField17.isEnabled = false
+        textField18.isEnabled = false
+        textField19.isEnabled = false
+        textField20.isEnabled = false
+        textField21.isEnabled = false
+        textField22.isEnabled = false
+        textField23.isEnabled = false
+        textField24.isEnabled = false
+        textField25.isEnabled = false
+    }
 }
