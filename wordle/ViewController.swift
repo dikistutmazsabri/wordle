@@ -10,68 +10,46 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var textField1: UITextField!
-    
     @IBOutlet weak var textField2: UITextField!
-    
     @IBOutlet weak var textField3: UITextField!
-    
     @IBOutlet weak var textField4: UITextField!
-    
     @IBOutlet weak var textField5: UITextField!
-    
     @IBOutlet weak var textField6: UITextField!
-    
     @IBOutlet weak var textField7: UITextField!
-    
     @IBOutlet weak var textField8: UITextField!
-    
     @IBOutlet weak var textField9: UITextField!
-    
     @IBOutlet weak var textField10: UITextField!
-    
     @IBOutlet weak var textField11: UITextField!
-    
     @IBOutlet weak var textField12: UITextField!
-    
     @IBOutlet weak var textField13: UITextField!
-    
     @IBOutlet weak var textField14: UITextField!
-    
     @IBOutlet weak var textField15: UITextField!
-    
     @IBOutlet weak var textField16: UITextField!
-    
     @IBOutlet weak var textField17: UITextField!
-    
     @IBOutlet weak var textField18: UITextField!
-    
     @IBOutlet weak var textField19: UITextField!
-    
     @IBOutlet weak var textField20: UITextField!
-    
     @IBOutlet weak var textField21: UITextField!
-    
     @IBOutlet weak var textField22: UITextField!
-    
     @IBOutlet weak var textField23: UITextField!
-    
     @IBOutlet weak var textField24: UITextField!
-    
     @IBOutlet weak var textField25: UITextField!
-    
     @IBOutlet weak var timeLabel: UILabel!
-    
+    @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
     
     var wordle = [String] ()
     var word = ""
-    var score = ""
+    var score = 0
     var time = (Timer)()
     var counter = 0
     var randomAgain = [String] ()
+    var highScore = 0
     
     @IBAction func CHECK(_ sender: Any) {
+        
+        
         
         var randomOne = word.map{ String($0) }
         
@@ -82,33 +60,43 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField1.text == randomOne[0] {
                 textField1.backgroundColor = .green
+                score += 50
                 randomOne[0] = ""
             }else if randomOne.contains(textField1.text!) {
                 textField1.backgroundColor = .yellow
+                score += 5
             }
             if textField2.text == randomOne[1] {
                 textField2.backgroundColor = .green
+                score += 50
                 randomOne[1] = ""
             }else if randomOne.contains(textField2.text!) {
                 textField2.backgroundColor = .yellow
+                score += 5
             }
             if textField3.text == randomOne[2]  {
                 textField3.backgroundColor = .green
+                score += 50
                 randomOne[2] = ""
             }else if randomOne.contains(textField3.text!) {
                 textField3.backgroundColor = .yellow
+                score += 5
             }
             if textField4.text == randomOne[3] {
                 textField4.backgroundColor = .green
+                score += 0
                 randomOne[3] = ""
             }else if randomOne.contains(textField4.text!) {
                 textField4.backgroundColor = .yellow
+                score += 5
             }
             if textField5.text == randomOne[4] {
                 textField5.backgroundColor = .green
+                score += 50
                 randomOne[4] = ""
             }else if randomOne.contains(textField5.text!) {
                 textField5.backgroundColor = .yellow
+                score += 5
             }
             
             randomOne[0]=randomAgain[0]
@@ -136,34 +124,43 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField6.text == randomOne[0]{
                 textField6.backgroundColor = .green
+                score += 40
                 randomOne[0] = ""
             }else if randomOne.contains(textField6.text!) {
                 textField6.backgroundColor = .yellow
+                score += 4
             }
-            
             if textField7.text == randomOne[1] {
                 textField7.backgroundColor = .green
-                randomOne[0] = ""
+                score += 40
+                randomOne[1] = ""
             }else if randomOne.contains(textField7.text!) {
                 textField7.backgroundColor = .yellow
+                score += 4
             }
             if textField8.text == randomOne[2] {
                 textField8.backgroundColor = .green
-                randomOne[0] = ""
+                score += 40
+                randomOne[2] = ""
             }else if randomOne.contains(textField8.text!) {
                 textField8.backgroundColor = .yellow
+                score += 4
             }
             if textField9.text == randomOne[3] {
                 textField9.backgroundColor = .green
-                randomOne[0] = ""
+                score += 40
+                randomOne[3] = ""
             }else if randomOne.contains(textField9.text!) {
                 textField9.backgroundColor = .yellow
+                score += 4
             }
             if textField10.text == randomOne[4] {
                 textField10.backgroundColor = .green
-                randomOne[0] = ""
+                score += 40
+                randomOne[4] = ""
             }else if randomOne.contains(textField10.text!) {
                 textField10.backgroundColor = .yellow
+                score += 4
             }
             
             randomOne[0]=randomAgain[0]
@@ -190,33 +187,43 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField11.text == randomOne[0] {
                 textField11.backgroundColor = .green
+                score += 30
                 randomOne[0] = ""
             }else if randomOne.contains(textField11.text!) {
                 textField11.backgroundColor = .yellow
+                score += 3
             }
             if textField12.text == randomOne[1] {
                 textField12.backgroundColor = .green
+                score += 30
                 randomOne[1] = ""
             }else if randomOne.contains(textField12.text!){
                 textField12.backgroundColor = .yellow
+                score += 3
             }
             if textField13.text == randomOne[2] {
                 textField13.backgroundColor = .green
+                score += 30
                 randomOne[2] = ""
             }else if randomOne.contains(textField13.text!) {
                 textField13.backgroundColor = .yellow
+                score += 3
             }
             if textField14.text == randomOne[3] {
                 textField14.backgroundColor = .green
+                score += 30
                 randomOne[3] = ""
             }else if randomOne.contains(textField14.text!){
                 textField14.backgroundColor = .yellow
+                score += 3
             }
             if textField15.text == randomOne[4] {
                 textField15.backgroundColor = .green
+                score += 30
                 randomOne[4] = ""
             }else if randomOne.contains(textField15.text!) {
                 textField15.backgroundColor = .yellow
+                score += 3
             }
             
             randomOne[0]=randomAgain[0]
@@ -242,33 +249,43 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField16.text == randomOne[0] {
                 textField16.backgroundColor = .green
+                score += 20
                 randomOne[0] = ""
             }else if randomOne.contains(textField16.text!) {
                 textField16.backgroundColor = .yellow
+                score += 2
             }
             if textField17.text == randomOne[1] {
                 textField17.backgroundColor = .green
+                score += 20
                 randomOne[1] = ""
             }else if randomOne.contains(textField17.text!) {
                 textField17.backgroundColor = .yellow
+                score += 2
             }
             if textField18.text == randomOne[2] {
                 textField18.backgroundColor = .green
+                score += 20
                 randomOne[2] = ""
             }else if randomOne.contains(textField18.text!) {
                 textField18.backgroundColor = .yellow
+                score += 2
             }
             if textField19.text == randomOne[3] {
                 textField19.backgroundColor = .green
+                score += 20
                 randomOne[3] = ""
             }else if randomOne.contains(textField19.text!) {
                 textField19.backgroundColor = .yellow
+                score += 2
             }
             if textField20.text == randomOne[4] {
                 textField20.backgroundColor = .green
+                score += 20
                 randomOne[4] = ""
             }else if randomOne.contains(textField20.text!) {
                 textField20.backgroundColor = .yellow
+                score += 2
             }
             
             randomOne[0]=randomAgain[0]
@@ -294,33 +311,43 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             if textField21.text == randomOne[0] {
                 textField21.backgroundColor = .green
+                score += 10
                 randomOne[0] = ""
             }else if randomOne.contains(textField21.text!) {
                 textField21.backgroundColor = .yellow
+                score += 1
             }
             if textField22.text == randomOne[1] {
                 textField22.backgroundColor = .green
+                score += 10
                 randomOne[1] = ""
             }else if randomOne.contains(textField22.text!) {
                 textField22.backgroundColor = .yellow
+                score += 1
             }
             if textField23.text == randomOne[2] {
                 textField23.backgroundColor = .green
+                score += 10
                 randomOne[2] = ""
             }else if randomOne.contains(textField23.text!) {
                 textField23.backgroundColor = .yellow
+                score += 1
             }
             if textField24.text == randomOne[3] {
                 textField24.backgroundColor = .green
+                score += 10
                 randomOne[3] = ""
             }else if randomOne.contains(textField24.text!) {
                 textField24.backgroundColor = .yellow
+                score += 1
             }
             if textField25.text == randomOne[4] {
                 textField25.backgroundColor = .green
+                score += 10
                 randomOne[4] = ""
             }else if randomOne.contains(textField25.text!) {
                 textField25.backgroundColor = .yellow
+                score += 1
             }
             
             randomOne[0]=randomAgain[0]
@@ -346,6 +373,33 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemGray5
+        
+        self.textField1.backgroundColor = .systemGray6
+        self.textField2.backgroundColor = .systemGray6
+        self.textField3.backgroundColor = .systemGray6
+        self.textField4.backgroundColor = .systemGray6
+        self.textField5.backgroundColor = .systemGray6
+        self.textField6.backgroundColor = .systemGray6
+        self.textField7.backgroundColor = .systemGray6
+        self.textField8.backgroundColor = .systemGray6
+        self.textField9.backgroundColor = .systemGray6
+        self.textField10.backgroundColor = .systemGray6
+        self.textField11.backgroundColor = .systemGray6
+        self.textField12.backgroundColor = .systemGray6
+        self.textField13.backgroundColor = .systemGray6
+        self.textField14.backgroundColor = .systemGray6
+        self.textField15.backgroundColor = .systemGray6
+        self.textField16.backgroundColor = .systemGray6
+        self.textField17.backgroundColor = .systemGray6
+        self.textField18.backgroundColor = .systemGray6
+        self.textField19.backgroundColor = .systemGray6
+        self.textField20.backgroundColor = .systemGray6
+        self.textField21.backgroundColor = .systemGray6
+        self.textField22.backgroundColor = .systemGray6
+        self.textField23.backgroundColor = .systemGray6
+        self.textField24.backgroundColor = .systemGray6
+        self.textField25.backgroundColor = .systemGray6
         
         self.textField1.tag = 0
         self.textField2.tag = 1
@@ -404,31 +458,22 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         add()
         
-        scoreLabel.text = "Score: \(score)"
+        scoreLabel.text = "Score: \(0)"
         
-        randomWord()
+        let storedScore = UserDefaults.standard.object(forKey: "highScore")
         
+        if storedScore == nil {
+            highScore = 0
+            highScoreLabel.text = "High Score: \(highScore)"
+        }
         
-        textField6.isEnabled = false
-        textField7.isEnabled = false
-        textField8.isEnabled = false
-        textField9.isEnabled = false
-        textField10.isEnabled = false
-        textField11.isEnabled = false
-        textField12.isEnabled = false
-        textField13.isEnabled = false
-        textField14.isEnabled = false
-        textField15.isEnabled = false
-        textField16.isEnabled = false
-        textField17.isEnabled = false
-        textField18.isEnabled = false
-        textField19.isEnabled = false
-        textField20.isEnabled = false
-        textField21.isEnabled = false
-        textField22.isEnabled = false
-        textField23.isEnabled = false
-        textField24.isEnabled = false
-        textField25.isEnabled = false
+        if let newHighScore = storedScore as? Int{
+            highScore = newHighScore
+            highScoreLabel.text = "High Score: \(highScore)"
+            
+        }
+        
+        resetTextfields()
         
         print(word.map{ String($0) })
         let viewTapGesture = UITapGestureRecognizer(target: self, action: #selector(endedit))
@@ -438,7 +483,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
         view.endEditing(true)
     }
     func randomWord () {
+        
         let random = Int(arc4random_uniform(UInt32(wordle.count - 1)))
+        
         word = wordle[random]
     }
     
@@ -449,15 +496,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
         timeLabel.text = ("Time: \(counter)")
         
         if textField1.backgroundColor == .green && textField2.backgroundColor == .green && textField3.backgroundColor == .green && textField4.backgroundColor == .green && textField5.backgroundColor == .green {
-            timeLabel.text = "You are Amazing !!"
+            timeLabel.text = "Mükemmel !!"
         }else if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
-            timeLabel.text = "You are great"
+            timeLabel.text = "Süper !"
         }else if textField11.backgroundColor == .green && textField12.backgroundColor == .green && textField13.backgroundColor == .green && textField14.backgroundColor == .green && textField15.backgroundColor == .green {
-            timeLabel.text = "Well Done Good Job"
+            timeLabel.text = "Harika"
         }else if textField16.backgroundColor == .green && textField17.backgroundColor == .green && textField18.backgroundColor == .green && textField19.backgroundColor == .green && textField20.backgroundColor == .green {
-            timeLabel.text = "Well Done"
+            timeLabel.text = "Başardın"
         }else if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
-            timeLabel.text = "Nice"
+            timeLabel.text = "Sonunda :)"
         }
     }
     
@@ -474,17 +521,25 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                
+                self.scoreLabel.text = "Score: \(self.score)"
+                if self.score > self.highScore {
+                    self.highScore = self.score
+                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                }
+                
                 self.randomWord()
                 
                 self.counter = 0
                 
                 self.resetTextfields()
                 
-                self.textField1.backgroundColor = .white
-                self.textField2.backgroundColor = .white
-                self.textField3.backgroundColor = .white
-                self.textField4.backgroundColor = .white
-                self.textField5.backgroundColor = .white
+                self.textField1.backgroundColor = .systemGray6
+                self.textField2.backgroundColor = .systemGray6
+                self.textField3.backgroundColor = .systemGray6
+                self.textField4.backgroundColor = .systemGray6
+                self.textField5.backgroundColor = .systemGray6
                 
                 self.textField1.text = ""
                 self.textField2.text = ""
@@ -503,22 +558,32 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                
+                self.scoreLabel.text = "Score: \(self.score)"
+                if self.score > self.highScore {
+                    self.highScore = self.score
+                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                }
+                
                 self.randomWord()
                 
                 self.counter = 0
                 
                 self.resetTextfields()
                 
-                self.textField1.backgroundColor = .white
-                self.textField2.backgroundColor = .white
-                self.textField3.backgroundColor = .white
-                self.textField4.backgroundColor = .white
-                self.textField5.backgroundColor = .white
-                self.textField6.backgroundColor = .white
-                self.textField7.backgroundColor = .white
-                self.textField8.backgroundColor = .white
-                self.textField9.backgroundColor = .white
-                self.textField10.backgroundColor = .white
+                
+                
+                self.textField1.backgroundColor = .systemGray6
+                self.textField2.backgroundColor = .systemGray6
+                self.textField3.backgroundColor = .systemGray6
+                self.textField4.backgroundColor = .systemGray6
+                self.textField5.backgroundColor = .systemGray6
+                self.textField6.backgroundColor = .systemGray6
+                self.textField7.backgroundColor = .systemGray6
+                self.textField8.backgroundColor = .systemGray6
+                self.textField9.backgroundColor = .systemGray6
+                self.textField10.backgroundColor = .systemGray6
                 
                 self.textField1.text = ""
                 self.textField2.text = ""
@@ -542,27 +607,35 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                
+                self.scoreLabel.text = "Score: \(self.score)"
+                if self.score > self.highScore {
+                    self.highScore = self.score
+                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                }
+                
                 self.randomWord()
                 
                 self.counter = 0
                 
                 self.resetTextfields()
                 
-                self.textField1.backgroundColor = .white
-                self.textField2.backgroundColor = .white
-                self.textField3.backgroundColor = .white
-                self.textField4.backgroundColor = .white
-                self.textField5.backgroundColor = .white
-                self.textField6.backgroundColor = .white
-                self.textField7.backgroundColor = .white
-                self.textField8.backgroundColor = .white
-                self.textField9.backgroundColor = .white
-                self.textField10.backgroundColor = .white
-                self.textField11.backgroundColor = .white
-                self.textField12.backgroundColor = .white
-                self.textField13.backgroundColor = .white
-                self.textField14.backgroundColor = .white
-                self.textField15.backgroundColor = .white
+                self.textField1.backgroundColor = .systemGray6
+                self.textField2.backgroundColor = .systemGray6
+                self.textField3.backgroundColor = .systemGray6
+                self.textField4.backgroundColor = .systemGray6
+                self.textField5.backgroundColor = .systemGray6
+                self.textField6.backgroundColor = .systemGray6
+                self.textField7.backgroundColor = .systemGray6
+                self.textField8.backgroundColor = .systemGray6
+                self.textField9.backgroundColor = .systemGray6
+                self.textField10.backgroundColor = .systemGray6
+                self.textField11.backgroundColor = .systemGray6
+                self.textField12.backgroundColor = .systemGray6
+                self.textField13.backgroundColor = .systemGray6
+                self.textField14.backgroundColor = .systemGray6
+                self.textField15.backgroundColor = .systemGray6
                 
                 self.textField1.text = ""
                 self.textField2.text = ""
@@ -579,7 +652,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 self.textField13.text = ""
                 self.textField14.text = ""
                 self.textField15.text = ""
-               
+                
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
@@ -591,32 +664,41 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                
+                self.scoreLabel.text = "Score: \(self.score)"
+                if self.score > self.highScore {
+                    self.highScore = self.score
+                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                }
+                
+                
                 self.randomWord()
                 
                 self.counter = 0
                 
                 self.resetTextfields()
                 
-                self.textField1.backgroundColor = .white
-                self.textField2.backgroundColor = .white
-                self.textField3.backgroundColor = .white
-                self.textField4.backgroundColor = .white
-                self.textField5.backgroundColor = .white
-                self.textField6.backgroundColor = .white
-                self.textField7.backgroundColor = .white
-                self.textField8.backgroundColor = .white
-                self.textField9.backgroundColor = .white
-                self.textField10.backgroundColor = .white
-                self.textField11.backgroundColor = .white
-                self.textField12.backgroundColor = .white
-                self.textField13.backgroundColor = .white
-                self.textField14.backgroundColor = .white
-                self.textField15.backgroundColor = .white
-                self.textField16.backgroundColor = .white
-                self.textField17.backgroundColor = .white
-                self.textField18.backgroundColor = .white
-                self.textField19.backgroundColor = .white
-                self.textField20.backgroundColor = .white
+                self.textField1.backgroundColor = .systemGray6
+                self.textField2.backgroundColor = .systemGray6
+                self.textField3.backgroundColor = .systemGray6
+                self.textField4.backgroundColor = .systemGray6
+                self.textField5.backgroundColor = .systemGray6
+                self.textField6.backgroundColor = .systemGray6
+                self.textField7.backgroundColor = .systemGray6
+                self.textField8.backgroundColor = .systemGray6
+                self.textField9.backgroundColor = .systemGray6
+                self.textField10.backgroundColor = .systemGray6
+                self.textField11.backgroundColor = .systemGray6
+                self.textField12.backgroundColor = .systemGray6
+                self.textField13.backgroundColor = .systemGray6
+                self.textField14.backgroundColor = .systemGray6
+                self.textField15.backgroundColor = .systemGray6
+                self.textField16.backgroundColor = .systemGray6
+                self.textField17.backgroundColor = .systemGray6
+                self.textField18.backgroundColor = .systemGray6
+                self.textField19.backgroundColor = .systemGray6
+                self.textField20.backgroundColor = .systemGray6
                 
                 self.textField1.text = ""
                 self.textField2.text = ""
@@ -650,37 +732,45 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+                
+                self.scoreLabel.text = "Score: \(self.score)"
+                if self.score > self.highScore {
+                    self.highScore = self.score
+                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                }
+                
                 self.randomWord()
                 
                 self.counter = 0
                 
                 self.resetTextfields()
                 
-                self.textField1.backgroundColor = .white
-                self.textField2.backgroundColor = .white
-                self.textField3.backgroundColor = .white
-                self.textField4.backgroundColor = .white
-                self.textField5.backgroundColor = .white
-                self.textField6.backgroundColor = .white
-                self.textField7.backgroundColor = .white
-                self.textField8.backgroundColor = .white
-                self.textField9.backgroundColor = .white
-                self.textField10.backgroundColor = .white
-                self.textField11.backgroundColor = .white
-                self.textField12.backgroundColor = .white
-                self.textField13.backgroundColor = .white
-                self.textField14.backgroundColor = .white
-                self.textField15.backgroundColor = .white
-                self.textField16.backgroundColor = .white
-                self.textField17.backgroundColor = .white
-                self.textField18.backgroundColor = .white
-                self.textField19.backgroundColor = .white
-                self.textField20.backgroundColor = .white
-                self.textField21.backgroundColor = .white
-                self.textField22.backgroundColor = .white
-                self.textField23.backgroundColor = .white
-                self.textField24.backgroundColor = .white
-                self.textField25.backgroundColor = .white
+                self.textField1.backgroundColor = .systemGray6
+                self.textField2.backgroundColor = .systemGray6
+                self.textField3.backgroundColor = .systemGray6
+                self.textField4.backgroundColor = .systemGray6
+                self.textField5.backgroundColor = .systemGray6
+                self.textField6.backgroundColor = .systemGray6
+                self.textField7.backgroundColor = .systemGray6
+                self.textField8.backgroundColor = .systemGray6
+                self.textField9.backgroundColor = .systemGray6
+                self.textField10.backgroundColor = .systemGray6
+                self.textField11.backgroundColor = .systemGray6
+                self.textField12.backgroundColor = .systemGray6
+                self.textField13.backgroundColor = .systemGray6
+                self.textField14.backgroundColor = .systemGray6
+                self.textField15.backgroundColor = .systemGray6
+                self.textField16.backgroundColor = .systemGray6
+                self.textField17.backgroundColor = .systemGray6
+                self.textField18.backgroundColor = .systemGray6
+                self.textField19.backgroundColor = .systemGray6
+                self.textField20.backgroundColor = .systemGray6
+                self.textField21.backgroundColor = .systemGray6
+                self.textField22.backgroundColor = .systemGray6
+                self.textField23.backgroundColor = .systemGray6
+                self.textField24.backgroundColor = .systemGray6
+                self.textField25.backgroundColor = .systemGray6
                 
                 self.textField1.text = ""
                 self.textField2.text = ""
