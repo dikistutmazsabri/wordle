@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITextFieldDelegate{
     
@@ -38,6 +39,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
+    @IBOutlet weak var button: UIButton!
+    
+    
     
     var wordle = [String] ()
     var word = ""
@@ -66,6 +70,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField1.backgroundColor = .yellow
                 score += 5
             }
+            
             if textField2.text == randomOne[1] {
                 textField2.backgroundColor = .green
                 score += 50
@@ -74,6 +79,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField2.backgroundColor = .yellow
                 score += 5
             }
+            
             if textField3.text == randomOne[2]  {
                 textField3.backgroundColor = .green
                 score += 50
@@ -82,6 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField3.backgroundColor = .yellow
                 score += 5
             }
+            
             if textField4.text == randomOne[3] {
                 textField4.backgroundColor = .green
                 score += 0
@@ -90,6 +97,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField4.backgroundColor = .yellow
                 score += 5
             }
+            
             if textField5.text == randomOne[4] {
                 textField5.backgroundColor = .green
                 score += 50
@@ -106,6 +114,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
             randomOne[4]=randomAgain[4]
             
             win()
+            
+            textField1.borderStyle = .none
+            textField2.borderStyle = .none
+            textField3.borderStyle = .none
+            textField4.borderStyle = .none
+            textField5.borderStyle = .none
+            textField6.borderStyle = .bezel
+            textField7.borderStyle = .bezel
+            textField8.borderStyle = .bezel
+            textField9.borderStyle = .bezel
+            textField10.borderStyle = .bezel
             
             
             
@@ -171,6 +190,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             win2()
             
+            textField6.borderStyle = .none
+            textField7.borderStyle = .none
+            textField8.borderStyle = .none
+            textField9.borderStyle = .none
+            textField10.borderStyle = .none
+            textField11.borderStyle = .bezel
+            textField12.borderStyle = .bezel
+            textField13.borderStyle = .bezel
+            textField14.borderStyle = .bezel
+            textField15.borderStyle = .bezel
+            
             textField6.isEnabled = false
             textField7.isEnabled = false
             textField8.isEnabled = false
@@ -234,6 +264,18 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             win3()
             
+            
+            textField11.borderStyle = .none
+            textField12.borderStyle = .none
+            textField13.borderStyle = .none
+            textField14.borderStyle = .none
+            textField15.borderStyle = .none
+            textField16.borderStyle = .bezel
+            textField17.borderStyle = .bezel
+            textField18.borderStyle = .bezel
+            textField19.borderStyle = .bezel
+            textField20.borderStyle = .bezel
+            
             textField11.isEnabled = false
             textField12.isEnabled = false
             textField13.isEnabled = false
@@ -295,6 +337,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
             randomOne[4]=randomAgain[4]
             
             win4()
+            
+            textField16.borderStyle = .none
+            textField17.borderStyle = .none
+            textField18.borderStyle = .none
+            textField19.borderStyle = .none
+            textField20.borderStyle = .none
+            textField21.borderStyle = .bezel
+            textField22.borderStyle = .bezel
+            textField23.borderStyle = .bezel
+            textField24.borderStyle = .bezel
+            textField25.borderStyle = .bezel
             
             textField16.isEnabled = false
             textField17.isEnabled = false
@@ -358,6 +411,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             win5()
             
+            textField21.borderStyle = .none
+            textField22.borderStyle = .none
+            textField23.borderStyle = .none
+            textField24.borderStyle = .none
+            textField25.borderStyle = .none
+            
             textField21.isEnabled = false
             textField22.isEnabled = false
             textField23.isEnabled = false
@@ -371,9 +430,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray5
+        
+        
         
         self.textField1.backgroundColor = .systemGray6
         self.textField2.backgroundColor = .systemGray6
@@ -400,6 +462,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
         self.textField23.backgroundColor = .systemGray6
         self.textField24.backgroundColor = .systemGray6
         self.textField25.backgroundColor = .systemGray6
+        
+        textField1.borderStyle = .bezel
+        textField2.borderStyle = .bezel
+        textField3.borderStyle = .bezel
+        textField4.borderStyle = .bezel
+        textField5.borderStyle = .bezel
+        
         
         self.textField1.tag = 0
         self.textField2.tag = 1
