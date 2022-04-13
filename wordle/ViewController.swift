@@ -437,31 +437,6 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         
         
-        self.textField1.backgroundColor = .systemGray6
-        self.textField2.backgroundColor = .systemGray6
-        self.textField3.backgroundColor = .systemGray6
-        self.textField4.backgroundColor = .systemGray6
-        self.textField5.backgroundColor = .systemGray6
-        self.textField6.backgroundColor = .systemGray6
-        self.textField7.backgroundColor = .systemGray6
-        self.textField8.backgroundColor = .systemGray6
-        self.textField9.backgroundColor = .systemGray6
-        self.textField10.backgroundColor = .systemGray6
-        self.textField11.backgroundColor = .systemGray6
-        self.textField12.backgroundColor = .systemGray6
-        self.textField13.backgroundColor = .systemGray6
-        self.textField14.backgroundColor = .systemGray6
-        self.textField15.backgroundColor = .systemGray6
-        self.textField16.backgroundColor = .systemGray6
-        self.textField17.backgroundColor = .systemGray6
-        self.textField18.backgroundColor = .systemGray6
-        self.textField19.backgroundColor = .systemGray6
-        self.textField20.backgroundColor = .systemGray6
-        self.textField21.backgroundColor = .systemGray6
-        self.textField22.backgroundColor = .systemGray6
-        self.textField23.backgroundColor = .systemGray6
-        self.textField24.backgroundColor = .systemGray6
-        self.textField25.backgroundColor = .systemGray6
         
         textField1.borderStyle = .bezel
         textField2.borderStyle = .bezel
@@ -563,7 +538,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         counter += 1
         
         timeLabel.text = ("Time: \(counter)")
-        
+        if counter != 0 {
         if textField1.backgroundColor == .green && textField2.backgroundColor == .green && textField3.backgroundColor == .green && textField4.backgroundColor == .green && textField5.backgroundColor == .green {
             timeLabel.text = "Mükemmel !!"
         }else if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
@@ -574,6 +549,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             timeLabel.text = "Başardın"
         }else if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
             timeLabel.text = "Sonunda :)"
+        }
         }
     }
     
@@ -589,7 +565,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         if textField1.backgroundColor == .green && textField2.backgroundColor == .green && textField3.backgroundColor == .green && textField4.backgroundColor == .green && textField5.backgroundColor == .green {
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
                 
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
@@ -616,6 +592,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 self.textField4.text = ""
                 self.textField5.text = ""
                 
+                textField1.borderStyle = .bezel
+                textField2.borderStyle = .bezel
+                textField3.borderStyle = .bezel
+                textField4.borderStyle = .bezel
+                textField5.borderStyle = .bezel
+                
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
@@ -626,7 +608,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
                 
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
@@ -665,6 +647,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 self.textField9.text = ""
                 self.textField10.text = ""
                 
+                textField1.borderStyle = .bezel
+                textField2.borderStyle = .bezel
+                textField3.borderStyle = .bezel
+                textField4.borderStyle = .bezel
+                textField5.borderStyle = .bezel
+                
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
@@ -675,7 +663,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         if textField11.backgroundColor == .green && textField12.backgroundColor == .green && textField13.backgroundColor == .green && textField14.backgroundColor == .green && textField15.backgroundColor == .green {
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
                 
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
@@ -722,6 +710,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 self.textField14.text = ""
                 self.textField15.text = ""
                 
+                textField1.borderStyle = .bezel
+                textField2.borderStyle = .bezel
+                textField3.borderStyle = .bezel
+                textField4.borderStyle = .bezel
+                textField5.borderStyle = .bezel
+                
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
@@ -732,7 +726,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         if textField16.backgroundColor == .green && textField17.backgroundColor == .green && textField18.backgroundColor == .green && textField19.backgroundColor == .green && textField20.backgroundColor == .green {
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
                 
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
@@ -790,6 +784,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 self.textField19.text = ""
                 self.textField20.text = ""
                 
+                textField1.borderStyle = .bezel
+                textField2.borderStyle = .bezel
+                textField3.borderStyle = .bezel
+                textField4.borderStyle = .bezel
+                textField5.borderStyle = .bezel
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
@@ -800,15 +799,15 @@ class ViewController: UIViewController, UITextFieldDelegate{
         if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
-            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { UIAlertAction in
+            let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
                 
-                self.scoreLabel.text = "Score: \(self.score)"
+                
                 if self.score > self.highScore {
                     self.highScore = self.score
                     self.highScoreLabel.text = "High Score: \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
                 }
-                
+                self.scoreLabel.text = "Score: \(self.score)"
                 self.randomWord()
                 
                 self.counter = 0
@@ -867,18 +866,103 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 self.textField24.text = ""
                 self.textField25.text = ""
                 
+                textField1.borderStyle = .bezel
+                textField2.borderStyle = .bezel
+                textField3.borderStyle = .bezel
+                textField4.borderStyle = .bezel
+                textField5.borderStyle = .bezel
+                
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
+        }else {
+            let alertcontrol = UIAlertController(title: "Kaybettin...", message: "Kelimeyi bulamadın :(", preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Tekrar Başla", style: UIAlertAction.Style.default) {  [self] UIAlertAction in
+                
+                score = 0
+                self.scoreLabel.text = "Score: \(self.score)"
+                self.randomWord()
+                
+                self.counter = 0
+                
+                self.resetTextfields()
+                
+                self.textField1.backgroundColor = .systemGray6
+                self.textField2.backgroundColor = .systemGray6
+                self.textField3.backgroundColor = .systemGray6
+                self.textField4.backgroundColor = .systemGray6
+                self.textField5.backgroundColor = .systemGray6
+                self.textField6.backgroundColor = .systemGray6
+                self.textField7.backgroundColor = .systemGray6
+                self.textField8.backgroundColor = .systemGray6
+                self.textField9.backgroundColor = .systemGray6
+                self.textField10.backgroundColor = .systemGray6
+                self.textField11.backgroundColor = .systemGray6
+                self.textField12.backgroundColor = .systemGray6
+                self.textField13.backgroundColor = .systemGray6
+                self.textField14.backgroundColor = .systemGray6
+                self.textField15.backgroundColor = .systemGray6
+                self.textField16.backgroundColor = .systemGray6
+                self.textField17.backgroundColor = .systemGray6
+                self.textField18.backgroundColor = .systemGray6
+                self.textField19.backgroundColor = .systemGray6
+                self.textField20.backgroundColor = .systemGray6
+                self.textField21.backgroundColor = .systemGray6
+                self.textField22.backgroundColor = .systemGray6
+                self.textField23.backgroundColor = .systemGray6
+                self.textField24.backgroundColor = .systemGray6
+                self.textField25.backgroundColor = .systemGray6
+                
+                self.textField1.text = ""
+                self.textField2.text = ""
+                self.textField3.text = ""
+                self.textField4.text = ""
+                self.textField5.text = ""
+                self.textField6.text = ""
+                self.textField7.text = ""
+                self.textField8.text = ""
+                self.textField9.text = ""
+                self.textField10.text = ""
+                self.textField11.text = ""
+                self.textField12.text = ""
+                self.textField13.text = ""
+                self.textField14.text = ""
+                self.textField15.text = ""
+                self.textField16.text = ""
+                self.textField17.text = ""
+                self.textField18.text = ""
+                self.textField19.text = ""
+                self.textField20.text = ""
+                self.textField21.text = ""
+                self.textField22.text = ""
+                self.textField23.text = ""
+                self.textField24.text = ""
+                self.textField25.text = ""
+                
+                textField1.borderStyle = .bezel
+                textField2.borderStyle = .bezel
+                textField3.borderStyle = .bezel
+                textField4.borderStyle = .bezel
+                textField5.borderStyle = .bezel
+                
+            }
+            let alertaction2 = UIAlertAction(title: "Yeterli", style: UIAlertAction.Style.default) { [self] UIAlertAction in
+                navigationController?.popViewController(animated: true)
+            }
+            alertcontrol.addAction(alertAction)
+            alertcontrol.addAction(alertaction2)
+            self.present(alertcontrol, animated: true, completion: nil)
         }
     }
     
     private let allowedCharacters = CharacterSet(charactersIn: "ABCDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ")
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        textField.backgroundColor = .systemGray6
         if (textField.text?.count ?? 0) - range.length + string.count > 1 {
-            
+           
             self.tagBasedTextField(textField)
+            
             textField.autocorrectionType = .no
             return false
         }
