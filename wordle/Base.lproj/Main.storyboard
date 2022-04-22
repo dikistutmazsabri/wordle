@@ -47,194 +47,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="08i-fA-Jvg">
-                                <rect key="frame" x="130" y="290" width="46" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXl-Sx-gs8">
+                                <rect key="frame" x="99" y="224" width="227" height="28"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="fHd-4R-0Gr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="UUu-Md-BcI">
-                                <rect key="frame" x="76" y="290" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Iv5-OZ-Nx8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="cSd-85-ZQW">
-                                <rect key="frame" x="238" y="290" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="5oW-y3-wqc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="0L6-Qv-saF">
-                                <rect key="frame" x="184" y="290" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-eL-d7C">
-                                <rect key="frame" x="292" y="290" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZFd-6l-flU">
-                                <rect key="frame" x="130" y="332" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="OSr-rP-dBm">
-                                <rect key="frame" x="76" y="332" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="AKg-MH-3ec">
-                                <rect key="frame" x="238" y="332" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Qpj-oX-aiT">
-                                <rect key="frame" x="184" y="332" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mrx-5b-Txn">
-                                <rect key="frame" x="292" y="332" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ona-tJ-BYg">
-                                <rect key="frame" x="130" y="374" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="9mS-Nf-h1V">
-                                <rect key="frame" x="76" y="374" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="huW-qM-1Rg">
-                                <rect key="frame" x="238" y="374" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-QV-Smc">
-                                <rect key="frame" x="184" y="374" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="IOg-D8-TIZ">
-                                <rect key="frame" x="292" y="374" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="0hD-gM-Kz0">
-                                <rect key="frame" x="130" y="416" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="nU0-ww-fkZ">
-                                <rect key="frame" x="76" y="416" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="7Ph-8n-q78">
-                                <rect key="frame" x="238" y="416" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Uvr-yb-5le">
-                                <rect key="frame" x="184" y="416" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-nS-eza">
-                                <rect key="frame" x="292" y="416" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="DS1-rH-Eg0">
-                                <rect key="frame" x="130" y="458" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Z9a-Cp-YLV">
-                                <rect key="frame" x="76" y="458" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="RSJ-pV-eBo">
-                                <rect key="frame" x="238" y="458" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="77G-Q7-qDF">
-                                <rect key="frame" x="184" y="458" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="154-fO-r5v">
-                                <rect key="frame" x="292" y="458" width="46" height="34"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXl-Sx-gs8">
-                                <rect key="frame" x="47" y="228" width="268" height="28"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="7NV-2s-qPD"/>
+                                    <constraint firstAttribute="height" constant="28" id="I8i-se-Idv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUI-oI-nkz">
-                                <rect key="frame" x="47" y="96" width="160" height="21"/>
+                                <rect key="frame" x="153" y="88" width="160" height="21"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-Ne-4Kj">
-                                <rect key="frame" x="229" y="96" width="138" height="21"/>
+                                <rect key="frame" x="153" y="148" width="138" height="21"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="kdc-48-y7e"/>
+                                    <constraint firstAttribute="width" constant="138" id="War-j8-Dph"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SK-B3-p1P">
-                                <rect key="frame" x="166" y="581" width="82" height="63"/>
+                                <rect key="frame" x="181" y="613" width="58" height="31"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Dene"/>
@@ -242,94 +83,208 @@
                                     <action selector="CHECK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZL3-Fl-mjJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="08i-fA-Jvg">
+                                <rect key="frame" x="130" y="290" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="UUu-Md-BcI">
+                                <rect key="frame" x="76" y="290" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="cSd-85-ZQW">
+                                <rect key="frame" x="238" y="290" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="0L6-Qv-saF">
+                                <rect key="frame" x="184" y="290" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-eL-d7C">
+                                <rect key="frame" x="292" y="290" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZFd-6l-flU">
+                                <rect key="frame" x="130" y="332" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="OSr-rP-dBm">
+                                <rect key="frame" x="76" y="332" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="AKg-MH-3ec">
+                                <rect key="frame" x="238" y="332" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Qpj-oX-aiT">
+                                <rect key="frame" x="184" y="332" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mrx-5b-Txn">
+                                <rect key="frame" x="292" y="332" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ona-tJ-BYg">
+                                <rect key="frame" x="130" y="374" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="9mS-Nf-h1V">
+                                <rect key="frame" x="76" y="374" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="huW-qM-1Rg">
+                                <rect key="frame" x="238" y="374" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="AAI-QV-Smc">
+                                <rect key="frame" x="184" y="374" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="IOg-D8-TIZ">
+                                <rect key="frame" x="292" y="374" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="0hD-gM-Kz0">
+                                <rect key="frame" x="130" y="416" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="nU0-ww-fkZ">
+                                <rect key="frame" x="76" y="416" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="7Ph-8n-q78">
+                                <rect key="frame" x="238" y="416" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Uvr-yb-5le">
+                                <rect key="frame" x="184" y="416" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="XwY-nS-eza">
+                                <rect key="frame" x="292" y="416" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="DS1-rH-Eg0">
+                                <rect key="frame" x="130" y="458" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Z9a-Cp-YLV">
+                                <rect key="frame" x="76" y="458" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="RSJ-pV-eBo">
+                                <rect key="frame" x="238" y="458" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="77G-Q7-qDF">
+                                <rect key="frame" x="184" y="458" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="154-fO-r5v">
+                                <rect key="frame" x="292" y="458" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="En fazla bilinen kelime :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah0-r7-8HT">
+                                <rect key="frame" x="76" y="759" width="208" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Şuan bilinen kelime :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l00-wE-nLZ">
+                                <rect key="frame" x="76" y="730" width="199" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EUI-oI-nkz" firstAttribute="baseline" secondItem="KcG-Ne-4Kj" secondAttribute="baseline" id="0iJ-4J-jEO"/>
-                            <constraint firstItem="Qpj-oX-aiT" firstAttribute="top" secondItem="AKg-MH-3ec" secondAttribute="top" id="1VT-wQ-i3V"/>
-                            <constraint firstItem="KcG-Ne-4Kj" firstAttribute="leading" secondItem="EUI-oI-nkz" secondAttribute="trailing" constant="22" id="24p-U6-ve0"/>
-                            <constraint firstItem="0L6-Qv-saF" firstAttribute="trailing" secondItem="Qpj-oX-aiT" secondAttribute="trailing" id="4gF-gS-n3o"/>
-                            <constraint firstItem="7Ph-8n-q78" firstAttribute="trailing" secondItem="RSJ-pV-eBo" secondAttribute="trailing" id="55O-tf-qoi"/>
-                            <constraint firstItem="2SK-B3-p1P" firstAttribute="top" secondItem="DS1-rH-Eg0" secondAttribute="bottom" constant="89" id="6Lt-sf-ULv"/>
-                            <constraint firstItem="Uvr-yb-5le" firstAttribute="trailing" secondItem="77G-Q7-qDF" secondAttribute="trailing" id="6yc-1h-W1v"/>
-                            <constraint firstItem="nU0-ww-fkZ" firstAttribute="leading" secondItem="Z9a-Cp-YLV" secondAttribute="leading" id="7TE-AN-hSZ"/>
-                            <constraint firstItem="AAI-QV-Smc" firstAttribute="trailing" secondItem="Uvr-yb-5le" secondAttribute="trailing" id="7WU-19-VfY"/>
-                            <constraint firstItem="0L6-Qv-saF" firstAttribute="leading" secondItem="08i-fA-Jvg" secondAttribute="trailing" constant="8" id="809-Aq-BRr"/>
-                            <constraint firstItem="6rv-eL-d7C" firstAttribute="trailing" secondItem="Mrx-5b-Txn" secondAttribute="trailing" id="9fy-Rl-Wj6"/>
-                            <constraint firstItem="RSJ-pV-eBo" firstAttribute="top" secondItem="154-fO-r5v" secondAttribute="top" id="AI1-1Y-V73"/>
-                            <constraint firstItem="UUu-Md-BcI" firstAttribute="leading" secondItem="OSr-rP-dBm" secondAttribute="leading" id="AgP-ZB-u9q"/>
-                            <constraint firstItem="nU0-ww-fkZ" firstAttribute="trailing" secondItem="Z9a-Cp-YLV" secondAttribute="trailing" id="B9v-Uw-Q5V"/>
-                            <constraint firstItem="9mS-Nf-h1V" firstAttribute="trailing" secondItem="nU0-ww-fkZ" secondAttribute="trailing" id="C9t-0o-SbR"/>
-                            <constraint firstItem="6rv-eL-d7C" firstAttribute="leading" secondItem="cSd-85-ZQW" secondAttribute="trailing" constant="8" id="CUs-YI-iSO"/>
-                            <constraint firstItem="9mS-Nf-h1V" firstAttribute="top" secondItem="Ona-tJ-BYg" secondAttribute="top" id="D9S-l9-JJe"/>
-                            <constraint firstItem="OSr-rP-dBm" firstAttribute="leading" secondItem="9mS-Nf-h1V" secondAttribute="leading" id="DCW-GH-myA"/>
-                            <constraint firstItem="OSr-rP-dBm" firstAttribute="top" secondItem="UUu-Md-BcI" secondAttribute="bottom" constant="8" id="Dg4-ba-0DI"/>
-                            <constraint firstItem="0hD-gM-Kz0" firstAttribute="trailing" secondItem="DS1-rH-Eg0" secondAttribute="trailing" id="Hl8-R2-3NO"/>
-                            <constraint firstItem="UUu-Md-BcI" firstAttribute="top" secondItem="08i-fA-Jvg" secondAttribute="top" id="HnZ-M3-PIg"/>
-                            <constraint firstItem="nU0-ww-fkZ" firstAttribute="top" secondItem="9mS-Nf-h1V" secondAttribute="bottom" constant="8" id="I2e-WY-dfC"/>
-                            <constraint firstItem="08i-fA-Jvg" firstAttribute="leading" secondItem="UUu-Md-BcI" secondAttribute="trailing" constant="8" id="INf-vX-Jli"/>
-                            <constraint firstItem="EUI-oI-nkz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="JwY-Cn-qfB"/>
-                            <constraint firstItem="OSr-rP-dBm" firstAttribute="top" secondItem="ZFd-6l-flU" secondAttribute="top" id="Kqd-xo-isv"/>
-                            <constraint firstItem="9mS-Nf-h1V" firstAttribute="leading" secondItem="nU0-ww-fkZ" secondAttribute="leading" id="Ku7-Bg-uty"/>
-                            <constraint firstItem="huW-qM-1Rg" firstAttribute="top" secondItem="IOg-D8-TIZ" secondAttribute="top" id="MhH-0l-lDJ"/>
-                            <constraint firstItem="9mS-Nf-h1V" firstAttribute="top" secondItem="OSr-rP-dBm" secondAttribute="bottom" constant="8" id="Myq-lu-b3p"/>
-                            <constraint firstItem="AKg-MH-3ec" firstAttribute="top" secondItem="Mrx-5b-Txn" secondAttribute="top" id="OKP-lY-i0T"/>
-                            <constraint firstItem="cSd-85-ZQW" firstAttribute="trailing" secondItem="AKg-MH-3ec" secondAttribute="trailing" id="OSP-Bl-EVW"/>
-                            <constraint firstItem="EUI-oI-nkz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Oqk-LQ-nR2"/>
-                            <constraint firstItem="AKg-MH-3ec" firstAttribute="trailing" secondItem="huW-qM-1Rg" secondAttribute="trailing" id="PMy-to-3l4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6rv-eL-d7C" secondAttribute="trailing" constant="76" id="Q6s-CQ-buv"/>
-                            <constraint firstItem="Ona-tJ-BYg" firstAttribute="leading" secondItem="0hD-gM-Kz0" secondAttribute="leading" id="QGW-8U-ntU"/>
-                            <constraint firstItem="0L6-Qv-saF" firstAttribute="top" secondItem="cSd-85-ZQW" secondAttribute="top" id="Qwi-Py-cMb"/>
-                            <constraint firstItem="Uvr-yb-5le" firstAttribute="leading" secondItem="77G-Q7-qDF" secondAttribute="leading" id="RQV-Rm-pQn"/>
-                            <constraint firstItem="DS1-rH-Eg0" firstAttribute="top" secondItem="77G-Q7-qDF" secondAttribute="top" id="RXB-6i-zmz"/>
-                            <constraint firstItem="0hD-gM-Kz0" firstAttribute="leading" secondItem="DS1-rH-Eg0" secondAttribute="leading" id="Rkn-00-bKV"/>
-                            <constraint firstItem="Z9a-Cp-YLV" firstAttribute="bottom" secondItem="DS1-rH-Eg0" secondAttribute="bottom" id="Sg3-AB-1bm"/>
-                            <constraint firstItem="Z9a-Cp-YLV" firstAttribute="top" secondItem="nU0-ww-fkZ" secondAttribute="bottom" constant="8" id="Sro-Wh-eXw"/>
-                            <constraint firstItem="EUI-oI-nkz" firstAttribute="leading" secondItem="sXl-Sx-gs8" secondAttribute="leading" id="TdI-sM-iWX"/>
-                            <constraint firstItem="08i-fA-Jvg" firstAttribute="trailing" secondItem="ZFd-6l-flU" secondAttribute="trailing" id="UBD-hK-swZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2SK-B3-p1P" secondAttribute="bottom" constant="218" id="V7d-k1-avQ"/>
-                            <constraint firstItem="Uvr-yb-5le" firstAttribute="top" secondItem="7Ph-8n-q78" secondAttribute="top" id="VQK-Tn-O9f"/>
-                            <constraint firstItem="huW-qM-1Rg" firstAttribute="leading" secondItem="7Ph-8n-q78" secondAttribute="leading" id="W93-3s-zeX"/>
-                            <constraint firstItem="08i-fA-Jvg" firstAttribute="top" secondItem="0L6-Qv-saF" secondAttribute="top" id="XJy-Kh-b7d"/>
-                            <constraint firstItem="Ona-tJ-BYg" firstAttribute="trailing" secondItem="0hD-gM-Kz0" secondAttribute="trailing" id="Xh1-GW-nC9"/>
-                            <constraint firstItem="IOg-D8-TIZ" firstAttribute="leading" secondItem="XwY-nS-eza" secondAttribute="leading" id="ZFU-CL-2uA"/>
-                            <constraint firstItem="nU0-ww-fkZ" firstAttribute="top" secondItem="0hD-gM-Kz0" secondAttribute="top" id="c6l-6k-Ml5"/>
-                            <constraint firstItem="UUu-Md-BcI" firstAttribute="trailing" secondItem="OSr-rP-dBm" secondAttribute="trailing" id="cPH-DT-9hv"/>
-                            <constraint firstItem="AAI-QV-Smc" firstAttribute="leading" secondItem="Uvr-yb-5le" secondAttribute="leading" id="dIQ-dd-YSV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z9a-Cp-YLV" secondAttribute="bottom" constant="370" id="dkv-0i-e6z"/>
-                            <constraint firstItem="0hD-gM-Kz0" firstAttribute="top" secondItem="Uvr-yb-5le" secondAttribute="top" id="eia-1p-94E"/>
-                            <constraint firstItem="ZFd-6l-flU" firstAttribute="leading" secondItem="Ona-tJ-BYg" secondAttribute="leading" id="fuh-nc-Cey"/>
-                            <constraint firstItem="0L6-Qv-saF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hLa-6y-Z64"/>
-                            <constraint firstItem="ZFd-6l-flU" firstAttribute="trailing" secondItem="Ona-tJ-BYg" secondAttribute="trailing" id="iH9-qT-meF"/>
-                            <constraint firstItem="7Ph-8n-q78" firstAttribute="top" secondItem="XwY-nS-eza" secondAttribute="top" id="iao-hx-Xis"/>
-                            <constraint firstItem="Qpj-oX-aiT" firstAttribute="leading" secondItem="AAI-QV-Smc" secondAttribute="leading" id="ioX-xO-Bx9"/>
-                            <constraint firstItem="huW-qM-1Rg" firstAttribute="trailing" secondItem="7Ph-8n-q78" secondAttribute="trailing" id="kJ9-Rb-B3s"/>
-                            <constraint firstItem="ZFd-6l-flU" firstAttribute="top" secondItem="Qpj-oX-aiT" secondAttribute="top" id="kTv-fC-soy"/>
-                            <constraint firstItem="6rv-eL-d7C" firstAttribute="leading" secondItem="Mrx-5b-Txn" secondAttribute="leading" id="kjL-06-IHe"/>
-                            <constraint firstItem="cSd-85-ZQW" firstAttribute="leading" secondItem="AKg-MH-3ec" secondAttribute="leading" id="lxb-ny-gf8"/>
-                            <constraint firstItem="7Ph-8n-q78" firstAttribute="leading" secondItem="RSJ-pV-eBo" secondAttribute="leading" id="mzK-Xm-pcd"/>
-                            <constraint firstItem="77G-Q7-qDF" firstAttribute="centerX" secondItem="2SK-B3-p1P" secondAttribute="centerX" id="pe0-Qe-rjN"/>
-                            <constraint firstItem="0L6-Qv-saF" firstAttribute="leading" secondItem="Qpj-oX-aiT" secondAttribute="leading" id="pqN-GX-qwU"/>
-                            <constraint firstItem="Ona-tJ-BYg" firstAttribute="top" secondItem="AAI-QV-Smc" secondAttribute="top" id="qWH-fn-pRg"/>
-                            <constraint firstItem="Mrx-5b-Txn" firstAttribute="leading" secondItem="IOg-D8-TIZ" secondAttribute="leading" id="qt8-Xo-t3T"/>
-                            <constraint firstItem="77G-Q7-qDF" firstAttribute="top" secondItem="RSJ-pV-eBo" secondAttribute="top" id="rCD-bA-hVw"/>
-                            <constraint firstItem="cSd-85-ZQW" firstAttribute="leading" secondItem="0L6-Qv-saF" secondAttribute="trailing" constant="8" id="rFM-3H-8pD"/>
-                            <constraint firstItem="UUu-Md-BcI" firstAttribute="top" secondItem="sXl-Sx-gs8" secondAttribute="bottom" constant="34" id="rHj-9V-9VL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sXl-Sx-gs8" secondAttribute="trailing" constant="99" id="s3R-Oc-5tZ"/>
-                            <constraint firstItem="XwY-nS-eza" firstAttribute="leading" secondItem="154-fO-r5v" secondAttribute="leading" id="s3i-nC-RDH"/>
-                            <constraint firstItem="Mrx-5b-Txn" firstAttribute="trailing" secondItem="IOg-D8-TIZ" secondAttribute="trailing" id="s7c-wI-LBL"/>
-                            <constraint firstItem="cSd-85-ZQW" firstAttribute="top" secondItem="6rv-eL-d7C" secondAttribute="top" id="saK-pu-8wk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KcG-Ne-4Kj" secondAttribute="trailing" constant="47" id="skx-we-fb1"/>
-                            <constraint firstItem="08i-fA-Jvg" firstAttribute="leading" secondItem="ZFd-6l-flU" secondAttribute="leading" id="syU-bm-8yB"/>
-                            <constraint firstItem="Qpj-oX-aiT" firstAttribute="trailing" secondItem="AAI-QV-Smc" secondAttribute="trailing" id="tad-ef-8FT"/>
-                            <constraint firstItem="AKg-MH-3ec" firstAttribute="leading" secondItem="huW-qM-1Rg" secondAttribute="leading" id="tjW-p9-CcR"/>
-                            <constraint firstItem="IOg-D8-TIZ" firstAttribute="trailing" secondItem="XwY-nS-eza" secondAttribute="trailing" id="tmY-Tv-SNv"/>
-                            <constraint firstItem="XwY-nS-eza" firstAttribute="trailing" secondItem="154-fO-r5v" secondAttribute="trailing" id="uD0-Vi-9az"/>
-                            <constraint firstItem="AAI-QV-Smc" firstAttribute="top" secondItem="huW-qM-1Rg" secondAttribute="top" id="xqz-VW-ua3"/>
-                            <constraint firstItem="UUu-Md-BcI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="yCh-1i-FdB"/>
-                            <constraint firstItem="2SK-B3-p1P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="yRP-wT-Ex3"/>
-                            <constraint firstItem="OSr-rP-dBm" firstAttribute="trailing" secondItem="9mS-Nf-h1V" secondAttribute="trailing" id="ypK-Ke-12K"/>
+                            <constraint firstItem="2SK-B3-p1P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="181" id="Ezg-bN-0xL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sXl-Sx-gs8" secondAttribute="trailing" constant="88" id="I9g-rF-B6A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2SK-B3-p1P" secondAttribute="bottom" constant="218" id="Rmf-hF-FCZ"/>
+                            <constraint firstItem="EUI-oI-nkz" firstAttribute="leading" secondItem="sXl-Sx-gs8" secondAttribute="leading" constant="54" id="W99-nT-Vid"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KcG-Ne-4Kj" secondAttribute="trailing" constant="123" id="Xkz-ju-E2B"/>
+                            <constraint firstItem="EUI-oI-nkz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="Xsd-td-tVM"/>
+                            <constraint firstItem="EUI-oI-nkz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sMq-4T-ZWO"/>
+                            <constraint firstItem="KcG-Ne-4Kj" firstAttribute="leading" secondItem="EUI-oI-nkz" secondAttribute="trailing" constant="-160" id="vEe-YH-cWY"/>
+                            <constraint firstItem="EUI-oI-nkz" firstAttribute="baseline" secondItem="KcG-Ne-4Kj" secondAttribute="baseline" constant="-60" id="vUc-vd-31U"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
@@ -340,6 +295,7 @@
                     <navigationItem key="navigationItem" id="HXf-rz-oTa"/>
                     <connections>
                         <outlet property="button" destination="2SK-B3-p1P" id="kvz-SY-ghy"/>
+                        <outlet property="currentWordCount" destination="l00-wE-nLZ" id="0ih-Zr-BY0"/>
                         <outlet property="highScoreLabel" destination="EUI-oI-nkz" id="qus-1B-64j"/>
                         <outlet property="scoreLabel" destination="KcG-Ne-4Kj" id="0R5-G0-Ciy"/>
                         <outlet property="textField1" destination="UUu-Md-BcI" id="mv0-6E-b8e"/>
@@ -368,6 +324,7 @@
                         <outlet property="textField8" destination="Qpj-oX-aiT" id="k6V-QT-Zgc"/>
                         <outlet property="textField9" destination="AKg-MH-3ec" id="b0A-Cl-ur9"/>
                         <outlet property="timeLabel" destination="sXl-Sx-gs8" id="j6r-Mc-TZn"/>
+                        <outlet property="wordCounter" destination="Ah0-r7-8HT" id="fRg-HD-sAH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

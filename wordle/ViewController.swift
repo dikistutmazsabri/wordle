@@ -40,7 +40,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var button: UIButton!
+  
+    @IBOutlet weak var wordCounter: UILabel!
     
+    @IBOutlet weak var currentWordCount: UILabel!
     
     
     var wordle = [String] ()
@@ -50,7 +53,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
     var counter = 0
     var randomAgain = [String] ()
     var highScore = 0
-    
+    var wordCount = 0
+    var highWordCount = 0
     @IBAction func CHECK(_ sender: Any) {
         
         
@@ -115,29 +119,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             win()
             
-            textField1.borderStyle = .none
-            textField2.borderStyle = .none
-            textField3.borderStyle = .none
-            textField4.borderStyle = .none
-            textField5.borderStyle = .none
-            textField6.borderStyle = .bezel
-            textField7.borderStyle = .bezel
-            textField8.borderStyle = .bezel
-            textField9.borderStyle = .bezel
-            textField10.borderStyle = .bezel
             
-            
-            
-            textField1.isEnabled = false
-            textField2.isEnabled = false
-            textField3.isEnabled = false
-            textField4.isEnabled = false
-            textField5.isEnabled = false
-            textField6.isEnabled = true
-            textField7.isEnabled = true
-            textField8.isEnabled = true
-            textField9.isEnabled = true
-            textField10.isEnabled = true
             
         }else if textField1.text?.count != 0 && textField2.text?.count != 0 && textField3.text?.count != 0 && textField4.text?.count != 0 && textField5.text?.count != 0 && textField6.text?.count != 0 && textField7.text?.count != 0 && textField8.text?.count != 0 && textField9.text?.count != 0 && textField10.text?.count != 0 && textField11.text?.count == 0 && textField12.text?.count == 0 && textField13.text?.count == 0 && textField14.text?.count == 0 && textField15.text?.count == 0 && textField16.text?.count == 0 && textField17.text?.count == 0 && textField18.text?.count == 0 && textField19.text?.count == 0 && textField20.text?.count == 0 && textField21.text?.count == 0 && textField22.text?.count == 0 && textField23.text?.count == 0 && textField24.text?.count == 0 && textField25.text?.count == 0 {
             
@@ -190,27 +172,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             win2()
             
-            textField6.borderStyle = .none
-            textField7.borderStyle = .none
-            textField8.borderStyle = .none
-            textField9.borderStyle = .none
-            textField10.borderStyle = .none
-            textField11.borderStyle = .bezel
-            textField12.borderStyle = .bezel
-            textField13.borderStyle = .bezel
-            textField14.borderStyle = .bezel
-            textField15.borderStyle = .bezel
             
-            textField6.isEnabled = false
-            textField7.isEnabled = false
-            textField8.isEnabled = false
-            textField9.isEnabled = false
-            textField10.isEnabled = false
-            textField11.isEnabled = true
-            textField12.isEnabled = true
-            textField13.isEnabled = true
-            textField14.isEnabled = true
-            textField15.isEnabled = true
             
             
         }else if textField1.text?.count != 0 && textField2.text?.count != 0 && textField3.text?.count != 0 && textField4.text?.count != 0 && textField5.text?.count != 0 && textField6.text?.count != 0 && textField7.text?.count != 0 && textField8.text?.count != 0 && textField9.text?.count != 0 && textField10.text?.count != 0 && textField11.text?.count != 0 && textField12.text?.count != 0 && textField13.text?.count != 0 && textField14.text?.count != 0 && textField15.text?.count != 0 && textField16.text?.count == 0 && textField17.text?.count == 0 && textField18.text?.count == 0 && textField19.text?.count == 0 && textField20.text?.count == 0 && textField21.text?.count == 0 && textField22.text?.count == 0 && textField23.text?.count == 0 && textField24.text?.count == 0 && textField25.text?.count == 0 {
@@ -265,27 +227,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             win3()
             
             
-            textField11.borderStyle = .none
-            textField12.borderStyle = .none
-            textField13.borderStyle = .none
-            textField14.borderStyle = .none
-            textField15.borderStyle = .none
-            textField16.borderStyle = .bezel
-            textField17.borderStyle = .bezel
-            textField18.borderStyle = .bezel
-            textField19.borderStyle = .bezel
-            textField20.borderStyle = .bezel
             
-            textField11.isEnabled = false
-            textField12.isEnabled = false
-            textField13.isEnabled = false
-            textField14.isEnabled = false
-            textField15.isEnabled = false
-            textField16.isEnabled = true
-            textField17.isEnabled = true
-            textField18.isEnabled = true
-            textField19.isEnabled = true
-            textField20.isEnabled = true
             
         }else if textField1.text?.count != 0 && textField2.text?.count != 0 && textField3.text?.count != 0 && textField4.text?.count != 0 && textField5.text?.count != 0 && textField6.text?.count != 0 && textField7.text?.count != 0 && textField8.text?.count != 0 && textField9.text?.count != 0 && textField10.text?.count != 0 && textField11.text?.count != 0 && textField12.text?.count != 0 && textField13.text?.count != 0 && textField14.text?.count != 0 && textField15.text?.count != 0 && textField16.text?.count != 0 && textField17.text?.count != 0 && textField18.text?.count != 0 && textField19.text?.count != 0 && textField20.text?.count != 0 && textField21.text?.count == 0 && textField22.text?.count == 0 && textField23.text?.count == 0 && textField24.text?.count == 0 && textField25.text?.count == 0 {
             
@@ -338,27 +280,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             win4()
             
-            textField16.borderStyle = .none
-            textField17.borderStyle = .none
-            textField18.borderStyle = .none
-            textField19.borderStyle = .none
-            textField20.borderStyle = .none
-            textField21.borderStyle = .bezel
-            textField22.borderStyle = .bezel
-            textField23.borderStyle = .bezel
-            textField24.borderStyle = .bezel
-            textField25.borderStyle = .bezel
             
-            textField16.isEnabled = false
-            textField17.isEnabled = false
-            textField18.isEnabled = false
-            textField19.isEnabled = false
-            textField20.isEnabled = false
-            textField21.isEnabled = true
-            textField22.isEnabled = true
-            textField23.isEnabled = true
-            textField24.isEnabled = true
-            textField25.isEnabled = true
             
         }else if textField1.text?.count != 0 && textField2.text?.count != 0 && textField3.text?.count != 0 && textField4.text?.count != 0 && textField5.text?.count != 0 && textField6.text?.count != 0 && textField7.text?.count != 0 && textField8.text?.count != 0 && textField9.text?.count != 0 && textField10.text?.count != 0 && textField11.text?.count != 0 && textField12.text?.count != 0 && textField13.text?.count != 0 && textField14.text?.count != 0 && textField15.text?.count != 0 && textField16.text?.count != 0 && textField17.text?.count != 0 && textField18.text?.count != 0 && textField19.text?.count != 0 && textField20.text?.count != 0 && textField21.text?.count != 0 && textField22.text?.count != 0 && textField23.text?.count != 0 && textField24.text?.count != 0 && textField25.text?.count != 0 {
             
@@ -411,17 +333,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             win5()
             
-            textField21.borderStyle = .none
-            textField22.borderStyle = .none
-            textField23.borderStyle = .none
-            textField24.borderStyle = .none
-            textField25.borderStyle = .none
             
-            textField21.isEnabled = false
-            textField22.isEnabled = false
-            textField23.isEnabled = false
-            textField24.isEnabled = false
-            textField25.isEnabled = false
             
         }
         
@@ -433,17 +345,12 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray5
-        
-        
-        
         
         textField1.borderStyle = .bezel
         textField2.borderStyle = .bezel
         textField3.borderStyle = .bezel
         textField4.borderStyle = .bezel
         textField5.borderStyle = .bezel
-        
         
         self.textField1.tag = 0
         self.textField2.tag = 1
@@ -517,6 +424,27 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
         }
         
+        let storedWord = UserDefaults.standard.object(forKey: "highWordCount")
+        
+        if storedWord == nil {
+            highWordCount = 0
+            wordCounter.text = "Bilinen kelime sayısı: \(highWordCount)"
+        }
+        
+        if let newStoredWord = storedWord as? Int {
+            wordCount = newStoredWord
+            wordCounter.text = "Bilinen kelime sayısı: \(highWordCount)"
+        }
+        
+        
+        
+        
+        currentWordCount.text = "Şuan bilinen kelime : \(0)"
+        
+        
+        
+        
+        
         resetTextfields()
         
         print(word.map{ String($0) })
@@ -559,19 +487,88 @@ class ViewController: UIViewController, UITextFieldDelegate{
         wordle.append("KALEM")
         wordle.append("DURUM")
         wordle.append("MERVE")
+        wordle.append("KATİP")
+        wordle.append("KÜREK")
+        wordle.append("DURAK")
+        wordle.append("MELEK")
+        wordle.append("TAKİP")
+        wordle.append("OYNAK")
+        wordle.append("KAYAK")
+        wordle.append("TARAF")
+        wordle.append("KAZIK")
+        wordle.append("LAMBA")
+        wordle.append("FIRIN")
+        wordle.append("DOLAP")
+        wordle.append("ÜÇGEN")
+        wordle.append("GÜNEŞ")
+        wordle.append("ÇEKİÇ")
+        wordle.append("KAŞIK")
+        wordle.append("SİLGİ")
+        wordle.append("YATAK")
+        wordle.append("ÇATAK")
+        wordle.append("KAMÇI")
+        wordle.append("ÇANAK")
+        wordle.append("SÜZME")
+        wordle.append("PARKE")
+        wordle.append("ROKET")
+        wordle.append("TARAK")
+        wordle.append("POLEN")
+        wordle.append("KAĞIT")
+        wordle.append("MEVKİ")
+        wordle.append("SEVGİ")
+        wordle.append("VELET")
+        wordle.append("BURUN")
+        wordle.append("KULAK")
+        wordle.append("BURSA")
+        wordle.append("İZMİR")
+        wordle.append("BODUR")
+        wordle.append("ÇUKUR")
+        wordle.append("BAYIR")
+        wordle.append("ZALİM")
+        wordle.append("MİRAÇ")
+        wordle.append("KAZAN")
+        wordle.append("YANAK")
+        wordle.append("ÇAKIR")
+        wordle.append("GÖLET")
+        wordle.append("KANAT")
+        wordle.append("BİTAP")
+        wordle.append("YORUM")
+        wordle.append("KİREÇ")
+        wordle.append("ÇEVRE")
+        wordle.append("KÖPEK")
+        wordle.append("ARMUT")
+        wordle.append("ÇİLEK")
+        wordle.append("KELEK")
+        wordle.append("ALTIN")
+        wordle.append("GÜMÜŞ")
+        wordle.append("METAL")
+        wordle.append("SİVRİ")
+        wordle.append("SİNEK")
+        wordle.append("KARGA")
+        wordle.append("DÜRÜM")
+        wordle.append("KELEK")
     }
     
     func win () {
         if textField1.backgroundColor == .green && textField2.backgroundColor == .green && textField3.backgroundColor == .green && textField4.backgroundColor == .green && textField5.backgroundColor == .green {
+            wordCount += 1
             
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                
+                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
+                wordCounter.text = "Bilinen kekime sayısı: \(highWordCount)"
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
                     self.highScoreLabel.text = "High Score: \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                    
+                }
+                if self.wordCount > self.highWordCount {
+                    self.highWordCount = self.wordCount
+                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
+                    
                 }
                 
                 self.randomWord()
@@ -601,22 +598,54 @@ class ViewController: UIViewController, UITextFieldDelegate{
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
+        }else{
+            textField1.borderStyle = .none
+            textField2.borderStyle = .none
+            textField3.borderStyle = .none
+            textField4.borderStyle = .none
+            textField5.borderStyle = .none
+            textField6.borderStyle = .bezel
+            textField7.borderStyle = .bezel
+            textField8.borderStyle = .bezel
+            textField9.borderStyle = .bezel
+            textField10.borderStyle = .bezel
+            
+            
+            
+            textField1.isEnabled = false
+            textField2.isEnabled = false
+            textField3.isEnabled = false
+            textField4.isEnabled = false
+            textField5.isEnabled = false
+            textField6.isEnabled = true
+            textField7.isEnabled = true
+            textField8.isEnabled = true
+            textField9.isEnabled = true
+            textField10.isEnabled = true
         }
     }
     
     func win2 () {
         if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
             
+            wordCount += 1
+            
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                
+                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
                     self.highScoreLabel.text = "High Score: \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                    
                 }
-                
+                if self.wordCount > self.highWordCount {
+                    self.highWordCount = self.wordCount
+                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
+                    
+                }
                 self.randomWord()
                 
                 self.counter = 0
@@ -652,26 +681,60 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField3.borderStyle = .bezel
                 textField4.borderStyle = .bezel
                 textField5.borderStyle = .bezel
-                
+                textField6.borderStyle = .none
+                textField7.borderStyle = .none
+                textField8.borderStyle = .none
+                textField9.borderStyle = .none
+                textField10.borderStyle = .none
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
+        }else{
+            textField6.borderStyle = .none
+            textField7.borderStyle = .none
+            textField8.borderStyle = .none
+            textField9.borderStyle = .none
+            textField10.borderStyle = .none
+            textField11.borderStyle = .bezel
+            textField12.borderStyle = .bezel
+            textField13.borderStyle = .bezel
+            textField14.borderStyle = .bezel
+            textField15.borderStyle = .bezel
+            
+            textField6.isEnabled = false
+            textField7.isEnabled = false
+            textField8.isEnabled = false
+            textField9.isEnabled = false
+            textField10.isEnabled = false
+            textField11.isEnabled = true
+            textField12.isEnabled = true
+            textField13.isEnabled = true
+            textField14.isEnabled = true
+            textField15.isEnabled = true
         }
     }
     
     func win3() {
         if textField11.backgroundColor == .green && textField12.backgroundColor == .green && textField13.backgroundColor == .green && textField14.backgroundColor == .green && textField15.backgroundColor == .green {
             
+            wordCount += 1
+            
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                
+                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
                     self.highScoreLabel.text = "High Score: \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                    
                 }
-                
+                if self.wordCount > self.highWordCount {
+                    self.highWordCount = self.wordCount
+                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
+                    
+                }
                 self.randomWord()
                 
                 self.counter = 0
@@ -715,26 +778,61 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField3.borderStyle = .bezel
                 textField4.borderStyle = .bezel
                 textField5.borderStyle = .bezel
-                
+                textField11.borderStyle = .none
+                textField12.borderStyle = .none
+                textField13.borderStyle = .none
+                textField14.borderStyle = .none
+                textField15.borderStyle = .none
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
+        }else{
+            textField11.borderStyle = .none
+            textField12.borderStyle = .none
+            textField13.borderStyle = .none
+            textField14.borderStyle = .none
+            textField15.borderStyle = .none
+            textField16.borderStyle = .bezel
+            textField17.borderStyle = .bezel
+            textField18.borderStyle = .bezel
+            textField19.borderStyle = .bezel
+            textField20.borderStyle = .bezel
+            
+            textField11.isEnabled = false
+            textField12.isEnabled = false
+            textField13.isEnabled = false
+            textField14.isEnabled = false
+            textField15.isEnabled = false
+            textField16.isEnabled = true
+            textField17.isEnabled = true
+            textField18.isEnabled = true
+            textField19.isEnabled = true
+            textField20.isEnabled = true
         }
     }
     
     func win4() {
         if textField16.backgroundColor == .green && textField17.backgroundColor == .green && textField18.backgroundColor == .green && textField19.backgroundColor == .green && textField20.backgroundColor == .green {
             
+            wordCount += 1
+            
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
                 
+                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
                 self.scoreLabel.text = "Score: \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
                     self.highScoreLabel.text = "High Score: \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                    
                 }
-                
+                if self.wordCount > self.highWordCount {
+                    self.highWordCount = self.wordCount
+                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
+                    
+                }
                 
                 self.randomWord()
                 
@@ -789,23 +887,59 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField3.borderStyle = .bezel
                 textField4.borderStyle = .bezel
                 textField5.borderStyle = .bezel
+                textField16.borderStyle = .none
+                textField17.borderStyle = .none
+                textField18.borderStyle = .none
+                textField19.borderStyle = .none
+                textField20.borderStyle = .none
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
+        }else{
+            textField16.borderStyle = .none
+            textField17.borderStyle = .none
+            textField18.borderStyle = .none
+            textField19.borderStyle = .none
+            textField20.borderStyle = .none
+            textField21.borderStyle = .bezel
+            textField22.borderStyle = .bezel
+            textField23.borderStyle = .bezel
+            textField24.borderStyle = .bezel
+            textField25.borderStyle = .bezel
+            
+            textField16.isEnabled = false
+            textField17.isEnabled = false
+            textField18.isEnabled = false
+            textField19.isEnabled = false
+            textField20.isEnabled = false
+            textField21.isEnabled = true
+            textField22.isEnabled = true
+            textField23.isEnabled = true
+            textField24.isEnabled = true
+            textField25.isEnabled = true
         }
     }
     
     func win5() {
         if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
             
+            wordCount += 1
+            
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                
+                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
                 
                 if self.score > self.highScore {
                     self.highScore = self.score
                     self.highScoreLabel.text = "High Score: \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
+                    wordCount += 1
+                }
+                if self.wordCount > self.highWordCount {
+                    self.highWordCount = self.wordCount
+                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
+                    
                 }
                 self.scoreLabel.text = "Score: \(self.score)"
                 self.randomWord()
@@ -871,14 +1005,21 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField3.borderStyle = .bezel
                 textField4.borderStyle = .bezel
                 textField5.borderStyle = .bezel
-                
+                textField21.borderStyle = .none
+                textField22.borderStyle = .none
+                textField23.borderStyle = .none
+                textField24.borderStyle = .none
+                textField25.borderStyle = .none
             }
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
         }else {
+            
+            wordCount = 0
+            
             let alertcontrol = UIAlertController(title: "Kaybettin...", message: "Kelimeyi bulamadın :(", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Tekrar Başla", style: UIAlertAction.Style.default) {  [self] UIAlertAction in
-                
+                wordCount = 0
                 score = 0
                 self.scoreLabel.text = "Score: \(self.score)"
                 self.randomWord()
@@ -944,7 +1085,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 textField3.borderStyle = .bezel
                 textField4.borderStyle = .bezel
                 textField5.borderStyle = .bezel
-                
+                textField21.borderStyle = .none
+                textField22.borderStyle = .none
+                textField23.borderStyle = .none
+                textField24.borderStyle = .none
+                textField25.borderStyle = .none
             }
             let alertaction2 = UIAlertAction(title: "Yeterli", style: UIAlertAction.Style.default) { [self] UIAlertAction in
                 navigationController?.popViewController(animated: true)
@@ -955,7 +1100,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
-    private let allowedCharacters = CharacterSet(charactersIn: "ABCDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ")
+    private let allowedCharacters = CharacterSet(charactersIn: "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ")
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.backgroundColor = .systemGray6
@@ -983,6 +1128,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func resetTextfields () {
         
         randomWord()
+        
         
         textField1.isEnabled = true
         textField2.isEnabled = true
