@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var button: UIButton!
-  
+    
     @IBOutlet weak var wordCounter: UILabel!
     
     @IBOutlet weak var currentWordCount: UILabel!
@@ -55,6 +55,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     var highScore = 0
     var wordCount = 0
     var highWordCount = 0
+    var currentwordCount = 0
     @IBAction func CHECK(_ sender: Any) {
         
         
@@ -409,39 +410,34 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         add()
         
-        scoreLabel.text = "Score: \(0)"
+        scoreLabel.text = "Puan : \(0)"
         
         let storedScore = UserDefaults.standard.object(forKey: "highScore")
         
         if storedScore == nil {
             highScore = 0
-            highScoreLabel.text = "High Score: \(highScore)"
+            highScoreLabel.text = "Rekor puan : \(highScore)"
         }
         
         if let newHighScore = storedScore as? Int{
             highScore = newHighScore
-            highScoreLabel.text = "High Score: \(highScore)"
+            highScoreLabel.text = "Rekor puan : \(highScore)"
             
         }
+        
+        currentWordCount.text = "ve   kelime : \(0)"
         
         let storedWord = UserDefaults.standard.object(forKey: "highWordCount")
         
         if storedWord == nil {
             highWordCount = 0
-            wordCounter.text = "Bilinen kelime sayısı: \(highWordCount)"
+            wordCounter.text = "Puan: \(highWordCount)"
         }
         
         if let newStoredWord = storedWord as? Int {
             wordCount = newStoredWord
-            wordCounter.text = "Bilinen kelime sayısı: \(highWordCount)"
+            wordCounter.text = "ve   kelime : \(wordCount)"
         }
-        
-        
-        
-        
-        currentWordCount.text = "Şuan bilinen kelime : \(0)"
-        
-        
         
         
         
@@ -467,17 +463,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         timeLabel.text = ("Time: \(counter)")
         if counter != 0 {
-        if textField1.backgroundColor == .green && textField2.backgroundColor == .green && textField3.backgroundColor == .green && textField4.backgroundColor == .green && textField5.backgroundColor == .green {
-            timeLabel.text = "Mükemmel !!"
-        }else if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
-            timeLabel.text = "Süper !"
-        }else if textField11.backgroundColor == .green && textField12.backgroundColor == .green && textField13.backgroundColor == .green && textField14.backgroundColor == .green && textField15.backgroundColor == .green {
-            timeLabel.text = "Harika"
-        }else if textField16.backgroundColor == .green && textField17.backgroundColor == .green && textField18.backgroundColor == .green && textField19.backgroundColor == .green && textField20.backgroundColor == .green {
-            timeLabel.text = "Başardın"
-        }else if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
-            timeLabel.text = "Sonunda :)"
-        }
+            if textField1.backgroundColor == .green && textField2.backgroundColor == .green && textField3.backgroundColor == .green && textField4.backgroundColor == .green && textField5.backgroundColor == .green {
+                timeLabel.text = "Mükemmel !!"
+            }else if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
+                timeLabel.text = "Süper !"
+            }else if textField11.backgroundColor == .green && textField12.backgroundColor == .green && textField13.backgroundColor == .green && textField14.backgroundColor == .green && textField15.backgroundColor == .green {
+                timeLabel.text = "Harika"
+            }else if textField16.backgroundColor == .green && textField17.backgroundColor == .green && textField18.backgroundColor == .green && textField19.backgroundColor == .green && textField20.backgroundColor == .green {
+                timeLabel.text = "Başardın"
+            }else if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
+                timeLabel.text = "Sonunda :)"
+            }
         }
     }
     
@@ -551,22 +547,22 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     func win () {
         if textField1.backgroundColor == .green && textField2.backgroundColor == .green && textField3.backgroundColor == .green && textField4.backgroundColor == .green && textField5.backgroundColor == .green {
-            wordCount += 1
             
+            currentwordCount += 1
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
-                wordCounter.text = "Bilinen kekime sayısı: \(highWordCount)"
-                self.scoreLabel.text = "Score: \(self.score)"
+                currentWordCount.text = "ve   kelime : \(currentwordCount)"
+                wordCounter.text = "ve   kelime : \(highWordCount)"
+                self.scoreLabel.text = "Puan : \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
-                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    self.highScoreLabel.text = "Rekor : \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
                     
                 }
                 if self.wordCount > self.highWordCount {
                     self.highWordCount = self.wordCount
-                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    self.wordCounter.text = "ve   kelime : \(self.highWordCount)"
                     UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
                     
                 }
@@ -628,21 +624,23 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func win2 () {
         if textField6.backgroundColor == .green && textField7.backgroundColor == .green && textField8.backgroundColor == .green && textField9.backgroundColor == .green && textField10.backgroundColor == .green {
             
-            wordCount += 1
             
+            
+            currentwordCount += 1
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
-                self.scoreLabel.text = "Score: \(self.score)"
+                currentWordCount.text = "ve   kelime : \(currentwordCount)"
+                wordCounter.text = "ve   kelime : \(highWordCount)"
+                self.scoreLabel.text = "Puan : \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
-                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    self.highScoreLabel.text = "Rekor : \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
                     
                 }
                 if self.wordCount > self.highWordCount {
                     self.highWordCount = self.wordCount
-                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    self.wordCounter.text = "ve   kelime : \(self.highWordCount)"
                     UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
                     
                 }
@@ -717,21 +715,23 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func win3() {
         if textField11.backgroundColor == .green && textField12.backgroundColor == .green && textField13.backgroundColor == .green && textField14.backgroundColor == .green && textField15.backgroundColor == .green {
             
-            wordCount += 1
             
+            
+            currentwordCount += 1
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
-                self.scoreLabel.text = "Score: \(self.score)"
+                currentWordCount.text = "ve   kelime : \(currentwordCount)"
+                wordCounter.text = "ve   kelime : \(highWordCount)"
+                self.scoreLabel.text = "Puan : \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
-                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    self.highScoreLabel.text = "Rekor : \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
                     
                 }
                 if self.wordCount > self.highWordCount {
                     self.highWordCount = self.wordCount
-                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    self.wordCounter.text = "ve   kelime : \(self.highWordCount)"
                     UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
                     
                 }
@@ -814,22 +814,23 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func win4() {
         if textField16.backgroundColor == .green && textField17.backgroundColor == .green && textField18.backgroundColor == .green && textField19.backgroundColor == .green && textField20.backgroundColor == .green {
             
-            wordCount += 1
             
+            
+            currentwordCount += 1
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                
-                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
-                self.scoreLabel.text = "Score: \(self.score)"
+                currentWordCount.text = "ve   kelime : \(currentwordCount)"
+                wordCounter.text = "ve   kelime : \(highWordCount)"
+                self.scoreLabel.text = "Puan : \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
-                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    self.highScoreLabel.text = "Rekor : \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
                     
                 }
                 if self.wordCount > self.highWordCount {
                     self.highWordCount = self.wordCount
-                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    self.wordCounter.text = "ve   kelime : \(self.highWordCount)"
                     UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
                     
                 }
@@ -923,21 +924,23 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func win5() {
         if textField21.backgroundColor == .green && textField22.backgroundColor == .green && textField23.backgroundColor == .green && textField24.backgroundColor == .green && textField25.backgroundColor == .green {
             
-            wordCount += 1
             
+            
+            currentwordCount += 1
             let alertController = UIAlertController(title: "DOĞRU !", message: "Sıradaki kelime ?", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Evet", style: UIAlertAction.Style.default) { [self] UIAlertAction in
-                currentWordCount.text = "Şuan bilinen kelime :\(wordCount)"
-                
+                currentWordCount.text = "ve   kelime : \(currentwordCount)"
+                wordCounter.text = "ve   kelime : \(highWordCount)"
+                self.scoreLabel.text = "Puan : \(self.score)"
                 if self.score > self.highScore {
                     self.highScore = self.score
-                    self.highScoreLabel.text = "High Score: \(self.highScore)"
+                    self.highScoreLabel.text = "Rekor : \(self.highScore)"
                     UserDefaults.standard.set(self.highScore, forKey: "highScore")
-                    wordCount += 1
+                    
                 }
                 if self.wordCount > self.highWordCount {
                     self.highWordCount = self.wordCount
-                    self.wordCounter.text = "En fazla bilinen kelime: \(self.highWordCount)"
+                    self.wordCounter.text = "ve   kelime : \(self.highWordCount)"
                     UserDefaults.standard.set(self.highWordCount, forKey: "highWordCount")
                     
                 }
@@ -1017,7 +1020,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             
             wordCount = 0
             
-            let alertcontrol = UIAlertController(title: "Kaybettin...", message: "Kelimeyi bulamadın :(", preferredStyle: UIAlertController.Style.alert)
+            let alertcontrol = UIAlertController(title: "Kaybettin...", message: "Kelime : \(word)", preferredStyle: UIAlertController.Style.alert)
             let alertAction = UIAlertAction(title: "Tekrar Başla", style: UIAlertAction.Style.default) {  [self] UIAlertAction in
                 wordCount = 0
                 score = 0
@@ -1105,7 +1108,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         textField.backgroundColor = .systemGray6
         if (textField.text?.count ?? 0) - range.length + string.count > 1 {
-           
+            
             self.tagBasedTextField(textField)
             
             textField.autocorrectionType = .no
